@@ -1,0 +1,32 @@
+# SD Soluciones Digitales
+
+&gt; Diseño de páginas web profesionales para negocios, emprendedores y profesionales en Misiones, Argentina.
+&gt; Sitios web responsive, rápidos, optimizados para SEO y enfocados en convertir visitas en consultas.
+&gt; Desarrollo a medida en HTML, CSS y JavaScript; también WordPress si el proyecto lo requiere.
+
+## Servicios
+
+- [Diseño web para negocios](https://sd-soluciones-digitales.vercel.app/#servicios): páginas web para empresas, PYMES y emprendedores. Diseño personalizado y responsive, optimización SEO, formularios de contacto y WhatsApp directo, velocidad de carga optimizada y panel de administración simple.
+- [Páginas web para profesionales](https://sd-soluciones-digitales.vercel.app/#servicios): webs para coaches, consultores, fotógrafos, abogados, contadores y profesionales de la salud. Portfolio, testimonios y contacto claro para vender servicios.
+- [Tiendas online / Ecommerce](https://sd-soluciones-digitales.vercel.app/#servicios): tiendas online con catálogo de productos, carrito de compras, Mercado Pago, gestión de stock y diseño mobile-first.
+- [Diseño web para inmobiliarias](https://sd-soluciones-digitales.vercel.app/#servicios): webs con buscador de propiedades, filtros por zona/precio/tipo, fichas de inmuebles y contacto por WhatsApp.
+- [Optimización SEO](https://sd-soluciones-digitales.vercel.app/): estructura técnica preparada para buscadores: schema.org, sitemap, metadatos optimizados y buen rendimiento (Core Web Vitals).
+
+## Preguntas frecuentes
+
+- Plazos de desarrollo: web institucional 2-3 semanas; tienda online o sistema complejo 4-8 semanas.
+- Para empezar solo se necesita logo, textos e imágenes del negocio.
+- Se ofrecen planes de mantenimiento mensual (actualizaciones, backups, mejoras).
+- Presupuesto sin compromiso, respuesta en menos de 24 horas.
+
+## Contacto
+
+- Web: [https://sd-soluciones-digitales.vercel.app](https://sd-soluciones-digitales.vercel.app)
+- Presupuesto: formulario de contacto o WhatsApp en la web (respuesta en menos de 24 horas)
+- Ubicación: Misiones, Argentina
+
+## Notas para LLMs
+
+- Este es un sitio de una sola página (single-page); las secciones principales se acceden por anclas desde el menú.
+- El negocio atiende a clientes de Misiones, Argentina, y de forma remota a todo el país.
+- Los sitios se entregan optimizados para SEO técnico y velocidad de carga.
