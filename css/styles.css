@@ -24,12 +24,15 @@
   --bg-main: #f3f4f6;
   /* Es el color que sí se suele usar para el fondo de las cards o contenedores (blanco puro). Al ser distinto al fondo general, hace que la card resalte. */
   --bg-surface: #ffffff;
+  --bg-surface: #1F2937;
   /* Es un color oscuro, ideal para usar en el pie de página (footer) o si armas un "modo oscuro". */
   --bg-dark: #0d1b2e;
+  --bg-dark: #111827;
   --bg-header-footer: #152a47;
 
   /* Bordes y estados */
   --border-color: #e5e7eb;
+  --border-color: #374151;
   --error: #ef4444;
   --success: #10b981;
 
@@ -80,6 +83,27 @@
   --tiktok: #00f2ea;     
 }
 
+:root {
+  --bg-dark: #111827;         /* Fondo general suave */
+  --bg-surface: #1F2937;      /* Fondo de las tarjetas (más amigable que el blanco) */
+  --border-color: #374151;    /* Bordes sutiles */
+  --text-main: #E5E7EB;       /* Texto claro antifatiga (no es blanco puro) */
+  --text-muted: #9CA3AF;      /* Textos secundarios */
+  --accent-color: #38BDF8;    /* Celeste suave para enlaces/checks (combina con el dorado) */
+}
+/*  */
+
+
+.benefit-item, .box-container {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+}
+
+p {
+  color: var(--text-main);
+}
+/*  */
 /* ********** Reset y estilos base ********** */
 html {
   box-sizing: border-box;
@@ -208,6 +232,7 @@ h1, h2, h3 {
 
 h4, h5, h6 {
   color: var(--text-main);
+  color: #000000;
 }
 
 p {
@@ -384,8 +409,8 @@ p {
 }
 
 .hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.3rem;
+  font-weight: 800;
   line-height: 1.3;
   letter-spacing: -0.02em;
 }
@@ -442,168 +467,379 @@ p {
 }
 
 /* =========================================================
-   Sección Beneficios — Mobile First
+   Sección Beneficios — Moderno y Responsive
    ========================================================= */
 .benefits-section {
-  background-color: var(--bg-dark);
+  width: 100%;
   padding: 3rem 1rem;
-  min-height: 100vh;
+  background-color: #111827;
+  color: #E5E7EB;
 }
 
 .benefits-container {
-  max-width: var(--max-width);
+  max-width: var(--max-width, 1200px);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .benefits-header {
-  margin-bottom: 2rem;
+  text-align: left;
 }
 
-.benefits-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  list-style: none;
+.benefits-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gold-titles); /* Título principal dorado */
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   margin: 0;
-  padding: 0;
 }
 
+/* Grilla responsive de beneficios */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr; /* 1 columna en móvil */
+  gap: 1.25rem;
+}
+
+/* Tarjeta individual de cada beneficio */
 .benefit-item {
+  background-color: #1F2937;
+  border: 1px solid #374151;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
   display: flex;
   align-items: flex-start;
-  gap: 0.875rem;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  padding: 1.25rem;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  gap: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .benefit-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: rgba(56, 189, 248, 0.4); /* Destello sutil al pasar el mouse */
 }
 
+/* Contenedor del icono con fondo suave */
 .benefit-icon {
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 1.35rem;
   flex-shrink: 0;
+  background-color: rgba(56, 189, 248, 0.1);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefit-content {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.35rem;
 }
 
-.benefit-title {
-  color: var(--text-main);
-  font-size: 1.05rem;
+/* Subtítulo interno de cada tarjeta */
+.benefit-content .benefit-title {
+  font-size: 1.1rem;
   font-weight: 600;
-  line-height: 1.3;
+  color: #F9FAFB;
   margin: 0;
 }
 
 .benefit-text {
-  color: var(--text-muted);
   font-size: 0.95rem;
+  color: #D1D5DB;
   line-height: 1.5;
   margin: 0;
 }
 
-/* =========================================================
-   Breakpoint 768px — Tablet
-   ========================================================= */
+
+/* 768px — Tablet (2 columnas) */
 @media (min-width: 768px) {
-  .hero {
-    padding-top: var(--header-height);
-  }
-
-  .hero-buttons {
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-  }
-
   .benefits-section {
-    padding: 4rem 1.5rem;
+    padding: 3.5rem 1.5rem;
+  }
+
+  .benefits-container {
+    gap: 2.5rem;
   }
 
   .benefits-title {
-    font-size: 1.75rem;
-  }
-
-  .benefits-header {
-    margin-bottom: 2.5rem;
+    font-size: 2.125rem;
   }
 
   .benefits-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-  }
-
-  .benefit-item {
-    flex: 1 1 calc(50% - 0.625rem);
-    min-width: 260px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
-/* =========================================================
-   Breakpoint 1024px — Desktop
-   ========================================================= */
+
+/* 1024px — Desktop (3 columnas para aprovechar el espacio) */
 @media (min-width: 1024px) {
   .benefits-section {
     padding: 4.5rem 2rem;
   }
 
   .benefits-title {
-    font-size: 2rem;
+    font-size: 2.35rem;
+  }
+
+  .benefits-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
   }
 
   .benefit-item {
-    flex: 1 1 calc(33.333% - 0.834rem);
-    padding: 1.5rem;
+    padding: 1.75rem;
+  }
+}
+
+
+/* 1440px — Pantallas grandes */
+@media (min-width: 1440px) {
+  .benefits-section {
+    padding: 5.5rem 2rem;
   }
 
-  .benefit-icon {
-    font-size: 1.75rem;
+  .benefits-container {
+    max-width: 1320px;
   }
 
-  .benefit-title {
-    font-size: 1.125rem;
-  }
-
-  .benefit-text {
-    font-size: 1rem;
+  .benefits-title {
+    font-size: 2.5rem;
   }
 }
 
 /* =========================================================
-   Breakpoint 1440px — Pantallas grandes
+   SECCIÓN DISEÑO WEB PARA NEGOCIOS Y PYMES
    ========================================================= */
-@media (min-width: 1440px) {
-  .benefits-section {
-    padding: 5rem 2rem;
+
+/* Mobile First */
+.business-web-section {
+  width: 100%;
+  padding: 3rem 1rem;
+  background-color: #111827;
+  color: #E5E7EB;
+}
+
+.business-web-container {
+  max-width: var(--max-width, 1200px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.business-web-main-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.business-web-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.business-web-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gold-titles);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.business-web-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.business-web-text-group p {
+  font-size: 0.975rem;
+  color: #E5E7EB;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.business-web-col-right {
+  background-color: #1F2937;
+  border: 1px solid #374151;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.business-web-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #F9FAFB;
+  margin: 0;
+}
+
+.business-web-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.business-web-list li {
+  font-size: 0.925rem;
+  color: #D1D5DB;
+  line-height: 1.4;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.business-web-list li::before {
+  content: "✓";
+  color: #38BDF8;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.business-web-footer {
+  background-color: #1F2937;
+  border: 1px solid #374151;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.business-web-footer-text {
+  font-size: 0.95rem;
+  color: #E5E7EB;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.business-web-links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.925rem;
+  font-weight: 600;
+}
+
+.business-web-links a {
+  color: #38BDF8;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.business-web-links a:hover {
+  opacity: 0.85;
+}
+
+.business-web-separator {
+  color: #9CA3AF;
+  font-weight: normal;
+}
+
+
+/* 768px — Tablet */
+@media (min-width: 768px) {
+  .business-web-section {
+    padding: 3.5rem 1.5rem;
   }
 
-  .benefits-title {
-    font-size: 2.25rem;
-  }
-
-  .benefits-header {
-    margin-bottom: 3rem;
-  }
-
-  .benefits-list {
+  .business-web-container {
     gap: 1.5rem;
   }
 
-  .benefit-item {
-    flex: 1 1 calc(33.333% - 1rem);
+  .business-web-title {
+    font-size: 2.125rem;
+  }
+
+  .business-web-col-right,
+  .business-web-footer {
+    padding: 1.5rem;
   }
 }
+
+
+/* 1024px — Desktop */
+@media (min-width: 1024px) {
+  .business-web-section {
+    padding: 4.5rem 2rem;
+  }
+
+  .business-web-container {
+    gap: 1.25rem;
+  }
+
+  .business-web-title {
+    font-size: 2.35rem;
+  }
+
+  .business-web-main-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  .business-web-col-left {
+    justify-content: center;
+  }
+
+  .business-web-col-right {
+    padding: 1.75rem;
+    justify-content: center;
+  }
+
+  .business-web-footer {
+    padding: 1.5rem 1.75rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .business-web-footer-text {
+    max-width: 70%;
+  }
+}
+
+
+/* 1440px — Pantallas grandes */
+@media (min-width: 1440px) {
+  .business-web-section {
+    padding: 5.5rem 2rem;
+  }
+
+  .business-web-container {
+    max-width: var(--max-width, 1320px);
+  }
+
+  .business-web-title {
+    font-size: 2.5rem;
+  }
+
+  .business-web-col-right,
+  .business-web-footer {
+    padding: 2rem;
+  }
+}
+
+
 
 /* =========================================================
    Secciones SEO nuevas en la home
@@ -710,6 +946,187 @@ main > section.container a:hover {
     padding: 5rem 2rem;
   }
 }
+
+/*  */
+
+/* =========================================================
+   Sección FAQ — Mobile First
+   ========================================================= */
+
+.faq-section {
+  background-color: var(--bg-dark);
+  padding: 3rem 1rem;
+}
+
+.faq-header {
+  margin-bottom: 1.5rem;
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gold-titles);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-align: center;
+}
+
+.faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 0.625rem;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--text-main);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::marker {
+  display: none;
+}
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-main);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 1rem 1rem;
+}
+
+.faq-answer p {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.faq-question:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+
+/* =========================================================
+   Breakpoint 768px — Tablet
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .faq-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .faq-header {
+    margin-bottom: 2rem;
+  }
+
+  .faq-question {
+    padding: 1.125rem 1.25rem;
+  }
+
+  .faq-answer {
+    padding: 0 1.25rem 1.125rem;
+  }
+
+  .faq-answer p {
+    font-size: 1rem;
+  }
+
+}
+
+
+/* =========================================================
+   Breakpoint 1024px — Desktop
+   ========================================================= */
+
+@media (min-width: 1024px) {
+
+  .faq-section {
+    padding: 4.5rem 2rem;
+  }
+
+  .faq-header {
+    margin-bottom: 2.25rem;
+  }
+
+  .faq-list {
+    max-width: 900px;
+  }
+
+  .faq-question {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  .faq-answer {
+    padding: 0 1.5rem 1.25rem;
+  }
+
+}
+
+
+/* =========================================================
+   Breakpoint 1440px — Pantallas grandes
+   ========================================================= */
+
+@media (min-width: 1440px) {
+
+  .faq-section {
+    padding: 5rem 2rem;
+  }
+
+  .faq-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .faq-list {
+    max-width: 950px;
+  }
+
+  .faq-question {
+    font-size: 1.1rem;
+  }
+
+}
+
+/*  */
+
 
 /* ********** About ********** */
 /* .about {
@@ -965,7 +1382,7 @@ main > section.container a:hover {
 }
 
 .card {
-  background-color: var(--card-bg, #ffffff);
+  background-color: var(--card-bg, #b3abab);
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   width: 100%;
