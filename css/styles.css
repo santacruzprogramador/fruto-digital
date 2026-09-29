@@ -799,6 +799,7 @@ p {
 
   .business-web-col-left {
     justify-content: center;
+    justify-content: space-between;
   }
 
   .business-web-col-right {
@@ -1166,6 +1167,7 @@ main > section.container a:hover {
 
 .about-content p {
   margin: 0 0 1rem;
+  color: #E5E7EB;
   color: #94a3b8;
   font-size: 1rem;
   line-height: 1.7;
@@ -1463,7 +1465,7 @@ main > section.container a:hover {
 
 .card-body h4 {
   margin: 0 0 6px 0;
-  font-size: 0.85rem;
+  font-size: 1.01rem;
   font-weight: 800;
   letter-spacing: 0.04em;
 }
@@ -1761,6 +1763,66 @@ main > section.container a:hover {
 }
 
 /* ********** PROMOCIONES ********** */
+.promo-eyebrow {
+  margin: 0 0 0.75rem;
+  color: #fbbf24;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.promo-box {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.promo-text {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #dbe4ee;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.promo-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  max-width: 700px;
+  margin: 1.75rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.promo-features li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  flex: 0 0 calc(50% - 0.3rem);
+  min-height: 42px;
+  padding: 0.6rem 0.5rem 0.6rem 1.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #dbe4ee;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.promo-features li::before {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 0.7rem;
+  transform: translateY(-50%);
+  color: #fbbf24;
+  font-weight: 800;
+}
+
 .card-content-promotions {
   display: flex;
   flex-direction: column;
@@ -1769,89 +1831,6 @@ main > section.container a:hover {
   background-color: var(--card-bg);
 }
 
-.card-content-promotions h2 {
-  text-align: center;
-}
-
-
-
-
-/*  */
-
-.promo-box {
-  max-width: 850px;
-  margin: 0 auto;
-/*   padding: 2rem 1.5rem;
-  text-align: center;
-  background: #0d1b2e;
-  border-radius: 16px; */
-}
-
-.promo-eyebrow {
-  margin: 0 0 0.75rem;
-  color: #fbbf24;
- /*  font-size: 0.8rem; */
-  font-weight: 800;
-  letter-spacing: 0.08em;
-}
-
-.promo-text {
-  max-width: 750px;
- /*  margin: 0 auto; */
-  color: #e2e8f0;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  text-align: justify;
-}
-
-.promo-text strong {
-  color: #fbbf24;
-  font-weight: 800;
-}
-
-.promo-action {
-  display: inline-block;
-/*   margin: 1.25rem 0 0; */
-  padding: 0.65rem 1rem;
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 700;
-  background: #4f46e5;
-  border-radius: 8px;
-}
-/*  */
-
-
-
-
-
-/* .promo-price {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.promo-price del {
-  font-size: 1.5rem;
-  color: #b61111;
-  font-weight: bold;     
-}
-
-.promo-price strong {
-  font-size: 2.5rem;
-  color: #0a0a0a;
-  font-weight: bold; 
-}
-
-.promo-price strong span {
-  font-size: 1rem;
-  opacity: 0.8;
-  padding: 0;
-  margin: 0;
-} */
-
-
 .promo-price {
   text-align: center;
   line-height: 1.2;
@@ -1859,10 +1838,10 @@ main > section.container a:hover {
 
 .old-price {
   display: block;
-  font-size: 1.5rem;
   color: #b91c1c;
-  text-decoration: line-through;
+  font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: line-through;
 }
 
 .old-price small {
@@ -1872,16 +1851,16 @@ main > section.container a:hover {
 
 .new-price {
   display: block;
+  color: #0a0a0a;
   font-size: 3.5rem;
   font-weight: 800;
-  color: #0a0a0a;
 }
 
 .new-price small {
-  font-size: 0.35em;      
+  margin-left: 0.15em;
+  font-size: 0.35em;
   font-weight: 400;
   opacity: 0.7;
-  margin-left: 0.15em;
 }
 
 .card-actions {
@@ -1893,8 +1872,27 @@ main > section.container a:hover {
 }
 
 @media (min-width: 768px) {
-  .promo-price h3 {
-    font-size: 3rem;
+  .promo-text {
+    font-size: 1.05rem;
+  }
+
+  .promo-features {
+    gap: 0.7rem;
+  }
+
+  .promo-features li {
+    flex-basis: calc(33.333% - 0.47rem);
+    min-height: 44px;
+    padding-left: 2rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .promo-features li {
+    flex-basis: calc(25% - 0.525rem);
+    min-height: 46px;
+    font-size: 0.88rem;
   }
 }
 
