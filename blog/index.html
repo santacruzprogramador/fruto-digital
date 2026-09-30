@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T6VM5WFC');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    TITLE (On-Page SEO - Factor de Ranking muy importante)
+    ══════════════════════════════════════════════════════════════
+    Google usa el <title> como uno de los señales más fuertes 
+    para entender de qué trata la página y para mostrarlo en 
+    los resultados de búsqueda.
+    
+    Reglas:
+    - Debe contener la palabra clave principal
+    - Debe ser único en todo el sitio
+    - Ideal entre 50-60 caracteres
+    - Incluir la marca al final
+  -->
+  <title>Blog de Desarrollo Web, SEO e IA | SD Soluciones Digitales</title>
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    META DESCRIPTION (On-Page SEO - Afecta el CTR)
+    ══════════════════════════════════════════════════════════════
+    No es un factor de ranking directo, pero influye mucho en 
+    la tasa de clics (CTR). Google a menudo usa este texto 
+    como snippet en los resultados de búsqueda.
+    
+    Buenas prácticas:
+    - Entre 140-160 caracteres
+    - Incluir palabras clave de forma natural
+    - Tener un llamado a la acción o beneficio claro
+  -->
+  <meta name="description" content="Guías claras de desarrollo web, SEO e inteligencia artificial para negocios de Misiones y Argentina. Aprendé a mejorar tu presencia online.">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    CANONICAL (Técnico SEO - Evita contenido duplicado)
+    ══════════════════════════════════════════════════════════════
+    Le dice a Google cuál es la versión "oficial" de esta página.
+    Evita que se diluya la autoridad si la misma página se puede 
+    acceder por diferentes URLs (con www, sin www, con parámetros, etc.).
+    
+    Es obligatorio en cualquier sitio profesional.
+  -->
+  <link rel="canonical" href="https://sd-soluciones-digitales.vercel.app/blog/">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    ROBOTS META (Técnico SEO - Control de indexación)
+    ══════════════════════════════════════════════════════════════
+    Indica a los buscadores cómo deben tratar esta página.
+    
+    - index, follow → permite indexar y seguir los enlaces
+    - max-image-preview:large → permite mostrar imágenes grandes en resultados
+    - max-snippet:-1 → permite snippets largos
+  -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    OPEN GRAPH (Social SEO / CTR)
+    ══════════════════════════════════════════════════════════════
+    Controla cómo se ve la página cuando se comparte en 
+    Facebook, WhatsApp, LinkedIn, Telegram, etc.
+    
+    Aunque no afecta el ranking de Google directamente, 
+    mejora mucho la tasa de clics desde redes sociales 
+    y genera más tráfico de calidad.
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="SD Soluciones Digitales">
+  <meta property="og:title" content="Blog de Desarrollo Web, SEO e IA | SD Soluciones Digitales">
+  <meta property="og:description" content="Guías claras de desarrollo web, SEO e inteligencia artificial para negocios de Misiones y Argentina.">
+  <meta property="og:url" content="https://sd-soluciones-digitales.vercel.app/blog/">
+
+
+<!-- 
+roto
+
+-->
+
+  <meta property="og:image" content="https://sd-soluciones-digitales.vercel.app/blog/imagen/og-blog-sd-soluciones.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Blog de SD Soluciones Digitales - Guías de Desarrollo Web, SEO e IA">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    TWITTER CARD (Social SEO)
+    ══════════════════════════════════════════════════════════════
+    Similar a Open Graph, pero optimizado específicamente 
+    para Twitter/X. Mejora la apariencia cuando se comparte 
+    el enlace en esa red.
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog de Desarrollo Web, SEO e IA | SD Soluciones Digitales">
+  <meta name="twitter:description" content="Guías claras de desarrollo web, SEO e inteligencia artificial para negocios de Misiones y Argentina.">
+  <meta name="twitter:image" content="https://sd-soluciones-digitales.vercel.app/blog/imagen/og-blog-sd-soluciones.jpg">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    FAVICON + THEME-COLOR (Técnico + UX)
+    ══════════════════════════════════════════════════════════════
+    - Favicon: mejora la identificación de la marca en pestañas 
+      y resultados de búsqueda.
+    - theme-color: cambia el color de la barra del navegador 
+      en móviles (mejora la percepción de calidad y profesionalismo).
+
+    Rutas corregidas según la estructura real del proyecto:
+    desde blog/index.html → ../assets/favicon/
+  -->
+  <link rel="icon" href="../assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#0f766e">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    ESTILOS CSS
+    ══════════════════════════════════════════════════════════════
+    No afectan el SEO directamente, pero una carga rápida 
+    de CSS sí influye en Core Web Vitals (LCP, CLS), 
+    que sí son factores de ranking.
+
+    Rutas:
+    - blog.css está en blog/css/
+    - styles.css está en la raíz /css/
+  -->
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    SCHEMA.ORG - Blog (Datos Estructurados)
+    ══════════════════════════════════════════════════════════════
+    Le permite a Google entender que esta página es un Blog 
+    y no un artículo individual.
+    
+    Beneficios:
+    - Mejora la comprensión del contenido
+    - Puede habilitar rich results (resultados enriquecidos)
+    - Ayuda a conectar el autor y la organización
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog de SD Soluciones Digitales",
+    "description": "Guías de desarrollo web, SEO e inteligencia artificial para negocios de Misiones y Argentina.",
+    "url": "https://sd-soluciones-digitales.vercel.app/blog/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SD Soluciones Digitales",
+      "url": "https://sd-soluciones-digitales.vercel.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sd-soluciones-digitales.vercel.app/assets/favicon/favicon.svg"
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "José Santacruz",
+      "url": "https://sd-soluciones-digitales.vercel.app/sobre-mi/"
+    },
+    "inLanguage": "es-AR",
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "¿Conviene hacer una página web con IA o contratar a un profesional?",
+        "url": "https://sd-soluciones-digitales.vercel.app/blog/articulos/conviene-hacer-web-con-ia-o-profesional/",
+        "datePublished": "2026-09-25",
+        "author": {
+          "@type": "Person",
+          "name": "José Santacruz"
+        },
+        "image": "https://sd-soluciones-digitales.vercel.app/blog/imagen/conviene-hacer-una-pagina-web-con-ia-o-contratar-a-un-profesional.webp"
+      }
+    ]
+  }
+  </script>
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    SCHEMA.ORG - CollectionPage (Datos Estructurados)
+    ══════════════════════════════════════════════════════════════
+    Refuerza que esta es una página de colección / listado 
+    de artículos. Es más preciso que usar solo "Blog".
+    
+    Ayuda a Google a entender la estructura del sitio 
+    y la relación entre páginas.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Blog de Desarrollo Web, SEO e IA",
+    "description": "Artículos y guías prácticas para negocios que quieren mejorar su presencia online.",
+    "url": "https://sd-soluciones-digitales.vercel.app/blog/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "SD Soluciones Digitales",
+      "url": "https://sd-soluciones-digitales.vercel.app/"
+    }
+  }
+  </script>
+
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6VM5WFC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <header class="navbar">
+    <section class="container">
+      <div class="logo">SD Soluciones Digitales</div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon"></label>
+
+      <nav class="menu">
+        <a href="../">Inicio</a>
+        <a href="../sobre-mi/">Acerca de mí</a>
+        <a href="../servicios/">Servicios</a>
+        <a href="../promociones/">Promociones</a>
+        <a href="./">Blog</a>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+
+    <!-- ═══════════ HERO ═══════════ -->
+
+    <!-- 
+      Google SEO: <section> divide lógicamente la página. 
+      'aria-labelledby' vincula esta caja con su título (H1) para el rastreador y accesibilidad.
+    -->
+    <section class="hero-1" aria-labelledby="titulo-hero">
+      <div class="container">
+        
+        <!-- 
+          Google SEO: Usar <p> y no un <h2>. 
+          Google penaliza el uso de encabezados (H1-H6) solo para dar estilo visual.
+        -->
+        <p class="hero-tag">Blog</p>
+        
+        <!-- 
+          Google SEO: El <h1> tiene el mayor peso SEO (contiene tus palabras clave). 
+          Debe haber solo uno por página. El 'id' lo enlaza con la <section>.
+        -->
+        <h1 id="titulo-hero">Guías de Desarrollo Web, SEO e IA para Negocios</h1>
+        
+        <!-- 
+          Google SEO: Contexto semántico. 
+          Google usa el párrafo justo debajo del H1 para generar "Fragmentos Destacados" en el buscador.
+        -->
+        <p class="hero-sub">
+          Información clara para mejorar tu presencia online, comparar opciones
+          y entender qué necesita realmente tu negocio.
+        </p>
+
+        <!-- ═══════════ BUSCADOR ═══════════ -->
+        <!-- 
+          Google SEO: 
+          1. role="search": Habilita la barra de búsqueda directa en los resultados de Google (Sitelinks).
+          2. <label>: Todo input exige un label para accesibilidad (lo ocultamos con CSS visualmente).
+        -->
+        <!-- 
+        <form class="search" action="./busqueda/" method="get" role="search">
+          <label class="visually-hidden" for="q">Buscar artículos</label>
+
+          <input
+            id="q"
+            type="search"
+            name="q"
+            placeholder="🔍 Buscar artículos..."
+          >
+
+          <button type="submit">Buscar</button>
+        </form>
+        -->
+      </div>
+    </section>
+
+    <!-- ═══════════ ARTÍCULO DESTACADO ═══════════ -->
+    <section class="destacado" aria-labelledby="titulo-destacado">
+      <div class="container">
+        <article class="destacado-card">
+
+          <figure class="destacado-img">
+            <img
+              src="imagen/mi-pagina-web-no-aparece-en-google.webp"
+              alt="Ilustración de una página web que no aparece en los resultados de Google"
+              width="800"
+              height="450"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </figure>
+
+          <div class="destacado-body">
+
+            <p class="cat">SEO y Google</p>
+
+            <h2 id="titulo-destacado">
+              <a
+                href="./articulos/mi-pagina-web-no-aparece-en-google/"
+                style="text-decoration:none; color:inherit;"
+              >
+                Mi página web no aparece en Google: qué revisar y cómo solucionarlo
+              </a>
+            </h2>
+
+            <p>
+              ¿Tu página web no aparece en Google? Te explicamos cómo comprobar
+              si está indexada, por qué puede no aparecer y qué puntos conviene revisar.
+            </p>
+
+            <p class="byline">
+              <a href="../sobre-mi/" rel="author">José Santacruz</a>
+              -
+              <time datetime="2026-09-29">29 de septiembre de 2026</time>
+            </p>
+
+            <a
+              class="btn"
+              href="./articulos/mi-pagina-web-no-aparece-en-google/"
+              aria-label="Leer la guía sobre cómo solucionar una página web que no aparece en Google"
+            >
+              Leer el artículo →
+            </a>
+
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <!--═══════════ ¿Conviene hacer una página web con IA o contratar a un profesional? ═══════════
+
+    <section class="destacado" aria-labelledby="titulo-destacado">
+      <div class="container">
+        <article class="destacado-card">
+
+          <figure class="destacado-img">
+            <img
+              src="imagen/conviene-hacer-una-pagina-web-con-ia-o-contratar-a-un-profesional.webp"
+              alt="Ilustración comparando una web creada con IA y una hecha por un profesional"
+              width="800"
+              height="450"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </figure>
+
+          <div class="destacado-body">
+            <p class="cat">IA y Negocios</p>
+
+            <h2 id="titulo-destacado">
+              <a
+                href="./articulos/conviene-hacer-web-con-ia-o-profesional/"
+                style="text-decoration:none; color:inherit;"
+              >
+                ¿Conviene hacer una página web con IA o contratar a un profesional?
+              </a>
+            </h2>
+
+            <p>
+              La IA permite crear una página web rápidamente, pero no todas las
+              necesidades de un negocio son iguales.
+            </p>
+
+            <p class="byline">
+              <a href="../sobre-mi/" rel="author">José Santacruz</a>
+              -
+              <time datetime="2026-09-25">25 de septiembre de 2026</time>
+            </p>
+
+            <a
+              class="btn"
+              href="./articulos/conviene-hacer-web-con-ia-o-profesional/"
+              aria-label="Leer el análisis sobre si conviene hacer una página web con IA o contratar a un profesional"
+            >
+              Leer el análisis →
+            </a>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    -->
+    
+
+    <!-- ═══════════ ¿QUÉ QUERÉS RESOLVER HOY? ═══════════
+    <section class="resolver" aria-labelledby="titulo-resolver">
+      <div class="container">
+        <h2 id="titulo-resolver" class="section-title">
+          ¿Qué querés resolver hoy?
+        </h2>
+
+        <div class="resolver-cards">
+
+          <a href="/blog/categoria/guias/" class="resolver-card">
+            <h3>Quiero aprender</h3>
+            <p>Guías y conceptos explicados claro.</p>
+          </a>
+
+          <a href="/blog/categoria/precios-y-costos/" class="resolver-card">
+            <h3>Estoy comparando</h3>
+            <p>Opciones, precios y decisiones.</p>
+          </a>
+
+          <a href="/servicios/" class="resolver-card">
+            <h3>Necesito una web</h3>
+            <p>Servicios para mi negocio.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    -->
+
+
+    <!-- ═══════════ EXPLORÁ POR TEMA ═══════════
+    <section class="temas" aria-labelledby="titulo-temas">
+      <div class="container">
+
+        <h2 id="titulo-temas" class="section-title">
+          Explorá por tema
+        </h2>
+
+        <nav class="chips" aria-label="Categorías del blog">
+
+          <a href="/blog/categoria/desarrollo-web/">
+            Desarrollo Web
+          </a>
+
+          <a href="/blog/categoria/seo-y-google/">
+            SEO y Google
+          </a>
+
+          <a href="/blog/categoria/ia-y-negocios/">
+            IA y Negocios
+          </a>
+
+          <a href="/blog/categoria/precios-y-costos/">
+            Precios y Costos
+          </a>
+
+          <a href="/blog/categoria/negocios-online/">
+            Negocios Online
+          </a>
+
+        </nav>
+
+      </div>
+    </section>
+    -->
+
+
+    <!-- ═══════════ ÚLTIMOS ARTÍCULOS ═══════════
+    <section class="ultimos" aria-labelledby="titulo-ultimos">
+
+      <div class="container">
+
+        <h2 id="titulo-ultimos" class="section-title">
+          Últimos artículos
+        </h2>
+
+        <div class="grid-articulos">
+
+          <article class="card">
+
+            <img
+              src="https://placehold.co/600x338/0f766e/ffffff.webp?text=Imagen+WEBP"
+              alt="Ejemplo de una landing page para un negocio"
+              width="600"
+              height="338"
+              loading="lazy"
+            >
+
+            <div class="card-body">
+
+              <p class="cat">IA y Negocios</p>
+
+              <h3>
+                <a href="/blog/que-es-una-landing-page/">
+                  ¿Qué es una landing page y cuándo la necesitás?
+                </a>
+              </h3>
+
+              <p class="extracto">
+                Una página de aterrizaje bien hecha puede convertir visitas
+                en clientes. Te explico cuándo usarla.
+              </p>
+
+              <p class="byline">
+                Por <a href="/sobre-mi/">José</a>
+                ·
+                <time datetime="2026-07-08">8 de julio de 2026</time>
+              </p>
+
+              <a class="leer" href="/blog/que-es-una-landing-page/">
+                Leer artículo →
+              </a>
+
+            </div>
+          </article>
+
+
+          <article class="card">
+
+            <img
+              src="https://placehold.co/600x338/9a3412/ffffff.webp?text=Imagen+WEBP"
+              alt="Calculadora y billetes representando el costo de una página web"
+              width="600"
+              height="338"
+              loading="lazy"
+            >
+
+            <div class="card-body">
+
+              <p class="cat">Precios y Costos</p>
+
+              <h3>
+                <a href="/blog/cuanto-cuesta-una-web-en-argentina/">
+                  ¿Cuánto cuesta hacer una página web en Argentina?
+                </a>
+              </h3>
+
+              <p class="extracto">
+                Presupuestos reales, los costos ocultos de lo gratis y cómo
+                pedir una cotización sin sorpresas.
+              </p>
+
+              <p class="byline">
+                Por <a href="/sobre-mi/">José</a>
+                ·
+                <time datetime="2026-07-05">5 de julio de 2026</time>
+              </p>
+
+              <a
+                class="leer"
+                href="/blog/cuanto-cuesta-una-web-en-argentina/"
+              >
+                Leer artículo →
+              </a>
+
+            </div>
+          </article>
+
+
+          <article class="card">
+
+            <img
+              src="https://placehold.co/600x338/3730a3/ffffff.webp?text=Imagen+WEBP"
+              alt="Comparativa entre un diseñador web y una herramienta de IA"
+              width="600"
+              height="338"
+              loading="lazy"
+            >
+
+            <div class="card-body">
+
+              <p class="cat">Desarrollo Web</p>
+
+              <h3>
+                <a href="/blog/ia-vs-disenador-web/">
+                  IA vs. diseñador web: ¿cuál elijo para mi negocio?
+                </a>
+              </h3>
+
+              <p class="extracto">
+                Comparativa honesta: ventajas, límites y en qué casos conviene
+                cada opción.
+              </p>
+
+              <p class="byline">
+                Por <a href="/sobre-mi/">José</a>
+                ·
+                <time datetime="2026-07-01">1 de julio de 2026</time>
+              </p>
+
+              <a class="leer" href="/blog/ia-vs-disenador-web/">
+                Leer artículo →
+              </a>
+
+            </div>
+          </article>
+
+        </div>
+
+
+        <nav class="paginacion" aria-label="Paginación del blog">
+          <a href="/blog/pagina/2/">
+            Siguiente →
+          </a>
+        </nav>
+
+      </div>
+
+    </section>
+    -->
+
+
+    <!-- ═══════════ CTA FINAL ═══════════ -->
+    <section class="cta-final">
+      <div class="container">
+
+        <h2>
+          ¿Necesitás una página web para tu negocio?
+        </h2>
+
+        <p>
+          Conocé mis servicios de desarrollo web.
+        </p>
+
+        <!-- Ruta corregida: desde blog/ → ../servicios/ -->
+        <a class="btn" href="../servicios/">
+          Ver servicios →
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+
+    <nav class="footer-social">
+      <a href="https://www.instagram.com/solucionesdigitales40337/"
+        class="social instagram"
+        aria-label="Instagram"
+        target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm11.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+        </svg>
+      </a>
+
+      <a href="https://wa.me/5493743615520?text=Hola,%20buenas.%20Me%20interesa%20obtener%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20desarrollo%20web.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20detalles%3F%20Muchas%20gracias."
+        class="social whatsapp"
+        aria-label="WhatsApp"
+        target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.5 3.5A11 11 0 0 0 3.9 17.8L2 22l4.3-1.8A11 11 0 1 0 20.5 3.5zM12 20a8.8 8.8 0 0 1-4.5-1.2l-.3-.2-2.6 1.1 1.1-2.5-.2-.4A8.9 8.9 0 1 1 12 20zm4.9-6.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1a7.2 7.2 0 0 1-3.6-3.2c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.5-.1-.2-.7-1.7-1-2.3-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.5 1.1 2.7a10.3 10.3 0 0 0 4 3.8c2.4 1 2.4.7 2.8.7.4 0 1.3-.5 1.5-1 .2-.5.2-1 .2-1.1 0-.1-.2-.2-.5-.4z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.tiktok.com/@soluciones_digitale"
+        class="social tiktok"
+        aria-label="TikTok"
+        target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16.5 2c.4 2 1.8 3.6 3.8 4v3a7.3 7.3 0 0 1-3.8-1.1v7.2A5.9 5.9 0 1 1 10.6 9v3a2.9 2.9 0 1 0 2.9 2.9V2h3z"/>
+        </svg>
+      </a>
+    </nav>
+
+      <p class="footer-copy">
+        © 2026 SD Soluciones Digitales. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- 
+    JS corregido: scripts.js está en blog/js/
+    (antes decía javascripts/scripts.js que no existe)
+  -->
+  <script src="js/scripts.js" defer></script>
+
+</body>
+</html>
