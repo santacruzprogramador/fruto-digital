@@ -1,32 +1,34 @@
-# SD Soluciones Digitales
+# Fruto Digital
 
-&gt; Diseño de páginas web profesionales para negocios, emprendedores y profesionales en Misiones, Argentina.
-&gt; Sitios web responsive, rápidos, optimizados para SEO y enfocados en convertir visitas en consultas.
-&gt; Desarrollo a medida en HTML, CSS y JavaScript; también WordPress si el proyecto lo requiere.
+> Desarrollo de páginas web profesionales para negocios, emprendedores y profesionales en Misiones, Argentina.
+> Sitios web responsive, rápidos, optimizados para SEO y enfocados en convertir visitas en consultas.
+> Desarrollo a medida en HTML, CSS y JavaScript. También se puede trabajar con WordPress cuando el proyecto lo requiere.
 
 ## Servicios
 
-- [Diseño web para negocios](https://sd-soluciones-digitales.vercel.app/#servicios): páginas web para empresas, PYMES y emprendedores. Diseño personalizado y responsive, optimización SEO, formularios de contacto y WhatsApp directo, velocidad de carga optimizada y panel de administración simple.
-- [Páginas web para profesionales](https://sd-soluciones-digitales.vercel.app/#servicios): webs para coaches, consultores, fotógrafos, abogados, contadores y profesionales de la salud. Portfolio, testimonios y contacto claro para vender servicios.
-- [Tiendas online / Ecommerce](https://sd-soluciones-digitales.vercel.app/#servicios): tiendas online con catálogo de productos, carrito de compras, Mercado Pago, gestión de stock y diseño mobile-first.
-- [Diseño web para inmobiliarias](https://sd-soluciones-digitales.vercel.app/#servicios): webs con buscador de propiedades, filtros por zona/precio/tipo, fichas de inmuebles y contacto por WhatsApp.
-- [Optimización SEO](https://sd-soluciones-digitales.vercel.app/): estructura técnica preparada para buscadores: schema.org, sitemap, metadatos optimizados y buen rendimiento (Core Web Vitals).
+* [Diseño web para negocios](https://frutodigital.com/servicios/): páginas web para empresas, PYMES y emprendedores. Diseño personalizado y responsive, optimización SEO, formularios de contacto y WhatsApp directo, velocidad de carga optimizada y panel de administración simple.
+* [Páginas web para profesionales](https://frutodigital.com/servicios/): webs para coaches, consultores, fotógrafos, abogados, contadores y profesionales de la salud. Portfolio, testimonios y contacto claro para presentar y vender servicios.
+* [Tiendas online / Ecommerce](https://frutodigital.com/servicios/): tiendas online con catálogo de productos, carrito de compras, Mercado Pago, gestión de stock y diseño adaptable a dispositivos móviles.
+* [Diseño web para inmobiliarias](https://frutodigital.com/servicios/): webs con buscador de propiedades, filtros por zona, precio y tipo, fichas de inmuebles y contacto por WhatsApp.
+* [Optimización SEO](https://frutodigital.com/servicios/): optimización de la estructura técnica y del contenido de una web para facilitar su rastreo, indexación y comprensión por los buscadores.
 
 ## Preguntas frecuentes
 
-- Plazos de desarrollo: web institucional 2-3 semanas; tienda online o sistema complejo 4-8 semanas.
-- Para empezar solo se necesita logo, textos e imágenes del negocio.
-- Se ofrecen planes de mantenimiento mensual (actualizaciones, backups, mejoras).
-- Presupuesto sin compromiso, respuesta en menos de 24 horas.
+* Plazos de desarrollo: una web institucional puede tardar entre 2 y 3 semanas; una tienda online o un sistema más complejo puede requerir entre 4 y 8 semanas.
+* Para empezar se necesitan los contenidos básicos del negocio, como logo, textos e imágenes.
+* Se ofrecen planes de mantenimiento para actualizaciones, copias de seguridad y mejoras.
+* El presupuesto se realiza sin compromiso.
 
 ## Contacto
 
-- Web: [https://sd-soluciones-digitales.vercel.app](https://sd-soluciones-digitales.vercel.app)
-- Presupuesto: formulario de contacto o WhatsApp en la web (respuesta en menos de 24 horas)
-- Ubicación: Misiones, Argentina
+* Web: https://frutodigital.com/
+* Presupuesto: formulario de contacto o WhatsApp disponible en la web.
+* Ubicación: Jardín América, Misiones, Argentina.
+* Atención remota: clientes de toda Argentina.
 
 ## Notas para LLMs
 
-- Este es un sitio de una sola página (single-page); las secciones principales se acceden por anclas desde el menú.
-- El negocio atiende a clientes de Misiones, Argentina, y de forma remota a todo el país.
-- Los sitios se entregan optimizados para SEO técnico y velocidad de carga.
+* Sitio web de Fruto Digital orientado a servicios de desarrollo web y SEO para negocios.
+* El negocio tiene base en Jardín América, Misiones, Argentina, y atiende también de forma remota a clientes de otras partes del país.
+* Los sitios se desarrollan con foco en estructura, rendimiento, responsive, SEO técnico y SEO On-Site.
+* El contenido del sitio incluye información sobre desarrollo web, SEO, presencia digital y soluciones para distintos tipos de negocios.
