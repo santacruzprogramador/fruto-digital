@@ -83,36 +83,52 @@
   <link rel="stylesheet" href="../../css/blog.css">
   <link rel="stylesheet" href="../../../css/styles.css">
 
-  <!-- Schema.org -->
+  <!-- DATOS ESTRUCTURADOS -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Mi página web no aparece en Google: qué revisar y cómo solucionarlo",
-    "description": "¿Tu página web no aparece en Google? Te explicamos cómo comprobar si está indexada, por qué puede no aparecer y qué revisar para solucionarlo.",
-    "image": [
-      "https://frutodigital.com/blog/imagen/mi-pagina-web-no-aparece-en-google.webp"
-    ],
-    "datePublished": "2026-09-29T00:00:00-03:00",
-    "dateModified": "2026-09-29T00:00:00-03:00",
-    "author": {
-      "@type": "Person",
-      "name": "José Santacruz",
-      "url": "https://frutodigital.com/sobre-mi/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Fruto Digital",
-      "url": "https://frutodigital.com/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://frutodigital.com/assets/favicon/favicon.svg"
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://frutodigital.com/blog/articulos/conviene-hacer-web-con-ia-o-profesional/#article",
+        "headline": "¿Conviene hacer una página web con IA o contratar a un profesional?",
+        "description": "Qué conviene tener en cuenta al crear una página web con inteligencia artificial o contratar a un profesional.",
+        "url": "https://frutodigital.com/blog/articulos/conviene-hacer-web-con-ia-o-profesional/",
+        "image": "https://frutodigital.com/blog/imagen/conviene-hacer-una-pagina-web-con-ia-o-contratar-a-un-profesional.webp",
+        "author": {
+          "@id": "https://frutodigital.com/sobre-mi/#person"
+        },
+        "publisher": {
+          "@id": "https://frutodigital.com/#organization"
+        },
+        "datePublished": "2026-09-25",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://frutodigital.com/blog/articulos/conviene-hacer-web-con-ia-o-profesional/"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://frutodigital.com/sobre-mi/#person",
+        "name": "José Santacruz",
+        "url": "https://frutodigital.com/sobre-mi/",
+        "worksFor": {
+          "@id": "https://frutodigital.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://frutodigital.com/#organization",
+        "name": "Fruto Digital",
+        "url": "https://frutodigital.com/",
+        "logo": "https://frutodigital.com/assets/imagen/og-image.png",
+        "sameAs": [
+          "https://www.instagram.com/fruto_digital1/",
+          "https://www.tiktok.com/@fruto_digital",
+          "https://github.com/santacruzprogramador"
+        ]
       }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://frutodigital.com/blog/articulos/mi-pagina-web-no-aparece-en-google/"
-    }
+    ]
   }
   </script>
 
@@ -813,16 +829,41 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
-
     <div class="container footer-content">
 
-      <nav
-        class="footer-social"
-        aria-label="Redes sociales"
-      >
-        <!-- Tus redes sociales -->
+      <nav class="footer-social">
+
+        <a href="https://www.instagram.com/fruto_digital1/"
+          class="social instagram"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm11.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/5493743615520?text=Hola,%20buenas.%20Me%20interesa%20obtener%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20desarrollo%20web.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20detalles%3F%20Muchas%20gracias."
+          class="social whatsapp"
+          aria-label="WhatsApp"
+          target="_blank"
+          rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.5 3.5A11 11 0 0 0 3.9 17.8L2 22l4.3-1.8A11 11 0 1 0 20.5 3.5zM12 20a8.8 8.8 0 0 1-4.5-1.2l-.3-.2-2.6 1.1 1.1-2.5-.2-.4A8.9 8.9 0 1 1 12 20zm4.9-6.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1a7.2 7.2 0 0 1-3.6-3.2c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.5-.1-.2-.7-1.7-1-2.3-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.5 1.1 2.7a10.3 10.3 0 0 0 4 3.8c2.4 1 2.4.7 2.8.7.4 0 1.3-.5 1.5-1 .2-.5.2-1 .2-1.1 0-.1-.2-.2-.5-.4z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.tiktok.com/@fruto_digital"
+          class="social tiktok"
+          aria-label="TikTok"
+          target="_blank"
+          rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.5 2c.4 2 1.8 3.6 3.8 4v3a7.3 7.3 0 0 1-3.8-1.1v7.2A5.9 5.9 0 1 1 10.6 9v3a2.9 2.9 0 1 0 2.9 2.9V2h3z"/>
+          </svg>
+        </a>
+
       </nav>
 
       <p class="footer-copy">
@@ -830,7 +871,6 @@
       </p>
 
     </div>
-
   </footer>
 
   <!-- JS -->
