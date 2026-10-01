@@ -3,7 +3,7 @@
     {
       "source": "/(.*)",
       "destination": "https://frutodigital.com/$1",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }
