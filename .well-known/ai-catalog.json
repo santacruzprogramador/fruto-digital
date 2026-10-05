@@ -1,12 +1,4 @@
 {
   "specVersion": "1.0",
-  "entries": [
-    {
-      "identifier": "https://frutodigital.com/llms.txt",
-      "displayName": "Información de Fruto Digital para asistentes de IA",
-      "type": "text/plain",
-      "url": "https://frutodigital.com/llms.txt",
-      "description": "Información sobre servicios, preguntas frecuentes y contacto de Fruto Digital."
-    }
-  ]
+  "entries": []
 }
