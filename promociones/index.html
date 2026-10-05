@@ -3,14 +3,6 @@
 
 <head>
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T6VM5WFC');</script>
-  <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -55,6 +47,34 @@
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
   <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Google Tag Manager: load after the page has finished and the browser is idle. -->
+  <script>
+  (function(w,d){
+    var loaded = false;
+    function loadGTM(){
+      if (loaded) return;
+      loaded = true;
+      w.dataLayer = w.dataLayer || [];
+      w.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var script = d.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-T6VM5WFC';
+      d.head.appendChild(script);
+    }
+    function scheduleGTM(){
+      if (w.requestIdleCallback) {
+        w.requestIdleCallback(loadGTM, {timeout: 2000});
+      } else {
+        w.setTimeout(loadGTM, 1000);
+      }
+    }
+    if (d.readyState === 'complete') scheduleGTM();
+    else w.addEventListener('load', scheduleGTM, {once: true});
+  })(window,document);
+  </script>
+  <!-- End Google Tag Manager -->
+
 </head>
 
 <body>
