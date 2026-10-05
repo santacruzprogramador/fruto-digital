@@ -1,4 +1,15 @@
 {
+  "headers": [
+    {
+      "source": "/.well-known/ai-catalog.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/ai-catalog+json; charset=utf-8"
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
       "source": "/(.*)",

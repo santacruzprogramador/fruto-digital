@@ -37,4 +37,10 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://frutodigital.com/blog/articulos/conviene-hacer-web-con-ia-o-profesional/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

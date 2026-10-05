@@ -1,34 +1,26 @@
 # Fruto Digital
 
-> Desarrollo de páginas web profesionales para negocios, emprendedores y profesionales en Misiones, Argentina.
-> Sitios web responsive, rápidos, optimizados para SEO y enfocados en convertir visitas en consultas.
-> Desarrollo a medida en HTML, CSS y JavaScript. También se puede trabajar con WordPress cuando el proyecto lo requiere.
+> Fruto Digital diseña y desarrolla sitios web para negocios, profesionales y emprendedores en Misiones y toda Argentina.
 
-## Servicios
+Fruto Digital tiene base en Jardín América, Misiones, y brinda atención remota en Argentina. Ofrece sitios web personalizados para negocios, profesionales, tiendas online e inmobiliarias, con diseño adaptable, SEO técnico y SEO on-page. También ofrece mantenimiento mensual. Para solicitar información o presupuesto, se puede contactar por WhatsApp.
 
-* [Diseño web para negocios](https://frutodigital.com/servicios/): páginas web para empresas, PYMES y emprendedores. Diseño personalizado y responsive, optimización SEO, formularios de contacto y WhatsApp directo, velocidad de carga optimizada y panel de administración simple.
-* [Páginas web para profesionales](https://frutodigital.com/servicios/): webs para coaches, consultores, fotógrafos, abogados, contadores y profesionales de la salud. Portfolio, testimonios y contacto claro para presentar y vender servicios.
-* [Tiendas online / Ecommerce](https://frutodigital.com/servicios/): tiendas online con catálogo de productos, carrito de compras, Mercado Pago, gestión de stock y diseño adaptable a dispositivos móviles.
-* [Diseño web para inmobiliarias](https://frutodigital.com/servicios/): webs con buscador de propiedades, filtros por zona, precio y tipo, fichas de inmuebles y contacto por WhatsApp.
-* [Optimización SEO](https://frutodigital.com/servicios/): optimización de la estructura técnica y del contenido de una web para facilitar su rastreo, indexación y comprensión por los buscadores.
+## Páginas principales
 
-## Preguntas frecuentes
+- [Inicio](https://frutodigital.com/): presentación de Fruto Digital y sus soluciones de diseño web.
+- [Servicios](https://frutodigital.com/servicios/): planes de diseño y desarrollo web para negocios.
+- [Promociones](https://frutodigital.com/promociones/): opciones y promociones vigentes de diseño web.
+- [Sobre mí](https://frutodigital.com/sobre-mi/): información sobre el profesional y su trabajo.
+- [Blog](https://frutodigital.com/blog/): artículos sobre desarrollo web, SEO e inteligencia artificial aplicada a negocios.
 
-* Plazos de desarrollo: una web institucional puede tardar entre 2 y 3 semanas; una tienda online o un sistema más complejo puede requerir entre 4 y 8 semanas.
-* Para empezar se necesitan los contenidos básicos del negocio, como logo, textos e imágenes.
-* Se ofrecen planes de mantenimiento para actualizaciones, copias de seguridad y mejoras.
-* El presupuesto se realiza sin compromiso.
+## Artículos
+
+- [Mi página web no aparece en Google: qué revisar](https://frutodigital.com/blog/articulos/mi-pagina-web-no-aparece-en-google/): causas comunes de falta de indexación y pasos para revisar una página.
+- [¿Conviene hacer una página web con IA o contratar a un profesional?](https://frutodigital.com/blog/articulos/conviene-hacer-web-con-ia-o-profesional/): comparación entre crear una web con herramientas de IA y contratar a un profesional.
 
 ## Contacto
 
-* Web: https://frutodigital.com/
-* Presupuesto: formulario de contacto o WhatsApp disponible en la web.
-* Ubicación: Jardín América, Misiones, Argentina.
-* Atención remota: clientes de toda Argentina.
+- [Consultar por WhatsApp](https://wa.me/5493743615520): consultas sobre servicios y presupuestos.
 
-## Notas para LLMs
+## Optional
 
-* Sitio web de Fruto Digital orientado a servicios de desarrollo web y SEO para negocios.
-* El negocio tiene base en Jardín América, Misiones, Argentina, y atiende también de forma remota a clientes de otras partes del país.
-* Los sitios se desarrollan con foco en estructura, rendimiento, responsive, SEO técnico y SEO On-Site.
-* El contenido del sitio incluye información sobre desarrollo web, SEO, presencia digital y soluciones para distintos tipos de negocios.
+- [Sitemap XML](https://frutodigital.com/sitemap.xml): listado de páginas públicas del sitio.
