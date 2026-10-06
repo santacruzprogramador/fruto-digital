@@ -18,8 +18,6 @@
 
 (function() {
   const section = document.querySelector("#portafolio .portfolio-container");
-  if (!section) return;
-
   const cards = section.querySelectorAll(".portfolio-card");
   const showMoreBtn = document.createElement("button");
   showMoreBtn.textContent = "Ver más";
