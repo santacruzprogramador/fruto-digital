@@ -53,7 +53,6 @@ El proyecto está orientado a crear sitios web **responsive, optimizados para bu
 ├── robots.txt
 ├── sitemap.xml
 ├── SEO.md
-├── vercel.json
 └── README.md
 ```
 
