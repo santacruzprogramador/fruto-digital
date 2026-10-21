@@ -104,6 +104,7 @@
       trigger.setAttribute('aria-haspopup', 'true');
       trigger.setAttribute('aria-controls', submenuId);
       trigger.setAttribute('aria-expanded', 'false');
+      let ignoreClickUntil = 0;
 
       function setOpen(open) {
         trigger.setAttribute('aria-expanded', String(open));
@@ -117,12 +118,30 @@
         }
       }
 
-      container.addEventListener('click', function (event) {
-        if (!mediaQuery.matches) return;
+      function toggleDropdown(event) {
+        event.preventDefault();
+        setOpen(trigger.getAttribute('aria-expanded') !== 'true');
+      }
+
+      // En móviles, pointerup es la activación del toque. Se ignora el click
+      // de compatibilidad que algunos navegadores disparan después del toque.
+      container.addEventListener('pointerup', function (event) {
+        if (!mediaQuery.matches || event.pointerType === 'mouse') return;
 
         if (trigger.contains(event.target)) {
-          event.preventDefault();
-          setOpen(trigger.getAttribute('aria-expanded') !== 'true');
+          ignoreClickUntil = Date.now() + 700;
+          toggleDropdown(event);
+        } else if (!dropdown.contains(event.target)) {
+          setOpen(false);
+        }
+      });
+
+      container.addEventListener('click', function (event) {
+        if (!mediaQuery.matches) return;
+        if (Date.now() < ignoreClickUntil) return;
+
+        if (trigger.contains(event.target)) {
+          toggleDropdown(event);
           return;
         }
 
