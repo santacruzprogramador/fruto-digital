@@ -85,6 +85,69 @@
         basePath
       );
 
+      bindMobileDropdown();
+    }
+
+    // En pantallas táctiles, controlar "Qué hacemos" con clic y evitar que
+    // los estados hover/focus del navegador móvil abran y cierren el submenú.
+    function bindMobileDropdown() {
+      const dropdown = container.querySelector('.menu-dropdown');
+      const trigger = container.querySelector('.menu-dropdown-toggle');
+      const submenu = container.querySelector('.submenu');
+      const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+      if (!dropdown || !trigger || !submenu) return;
+
+      const submenuId = 'nav-services-submenu';
+      submenu.id = submenuId;
+      trigger.setAttribute('role', 'button');
+      trigger.setAttribute('aria-haspopup', 'true');
+      trigger.setAttribute('aria-controls', submenuId);
+      trigger.setAttribute('aria-expanded', 'false');
+
+      function setOpen(open) {
+        trigger.setAttribute('aria-expanded', String(open));
+        submenu.style.display = open ? 'flex' : 'none';
+      }
+
+      function resetForDesktop() {
+        if (!mediaQuery.matches) {
+          submenu.style.removeProperty('display');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      }
+
+      container.addEventListener('click', function (event) {
+        if (!mediaQuery.matches) return;
+
+        if (trigger.contains(event.target)) {
+          event.preventDefault();
+          setOpen(trigger.getAttribute('aria-expanded') !== 'true');
+          return;
+        }
+
+        if (!dropdown.contains(event.target)) {
+          setOpen(false);
+          return;
+        }
+
+        if (event.target.closest('.submenu-link')) {
+          setOpen(false);
+        }
+      });
+
+      trigger.addEventListener('keydown', function (event) {
+        if (!mediaQuery.matches) return;
+
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          setOpen(trigger.getAttribute('aria-expanded') !== 'true');
+        } else if (event.key === 'Escape') {
+          setOpen(false);
+        }
+      });
+
+      mediaQuery.addEventListener('change', resetForDesktop);
     }
 
     async function init() {
