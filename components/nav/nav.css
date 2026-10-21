@@ -98,10 +98,17 @@
 }
 
 .navbar .menu-icon {
+  display: flex;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  min-height: 44px;
   cursor: pointer;
   color: white;
   font-size: 1.8rem;
   line-height: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar .menu-icon::before {
@@ -117,13 +124,15 @@
   flex-direction: column;
   position: absolute;
   bottom: 100%;
-  left: 0;
+  inset-inline: 0;
+  z-index: 1000;
   width: 100%;
   padding: 0.5rem 1rem 1rem;
   background: var(--bg-header-footer, var(--bg-dark));
+  box-shadow: 0 -12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.navbar .menu-toggle:checked ~ .menu {
+.navbar .menu-toggle:checked + .menu-icon + .menu {
   display: flex;
 }
 
