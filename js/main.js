@@ -18,7 +18,13 @@
 
 (function() {
   const section = document.querySelector("#portafolio .portfolio-container");
+
+  // La página principal no siempre tiene portafolio; salir si falta la sección.
+  if (!section) return;
+
   const cards = section.querySelectorAll(".portfolio-card");
+  if (cards.length <= 3) return;
+
   const showMoreBtn = document.createElement("button");
   showMoreBtn.textContent = "Ver más";
   showMoreBtn.classList.add("btn");
