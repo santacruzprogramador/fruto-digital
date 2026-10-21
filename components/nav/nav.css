@@ -1,0 +1,322 @@
+/* ========================================
+   NAV: Navegación principal
+======================================== */
+
+/* Contenedor */
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 0.8rem 0;
+  color: white;
+  background: var(--bg-header-footer, var(--bg-dark));
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .container {
+  width: 100%;
+  max-width: var(--max-width, 1200px);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Accesibilidad */
+
+.navbar .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Logo Fruto Digital */
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--gold-titles);
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.navbar .logo-mark {
+  display: flex;
+  flex: 0 0 42px;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--gold-titles);
+  background: #152a47;
+  border: 1px solid var(--gold-titles);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.navbar .logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.navbar .logo-name {
+  color: var(--gold-titles);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.navbar .logo-tagline {
+  color: #cbd5e1;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+/* Menú móvil */
+
+.navbar .menu-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.navbar .menu-icon {
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.navbar .menu-icon::before {
+  content: "\2630";
+}
+
+.navbar .menu-toggle:checked + .menu-icon::before {
+  content: "\2715";
+}
+
+.navbar .menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem 1rem;
+  background: var(--bg-header-footer, var(--bg-dark));
+}
+
+.navbar .menu-toggle:checked ~ .menu {
+  display: flex;
+}
+
+/* Enlaces */
+
+.navbar .menu-link {
+  display: block;
+  padding: 1rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.navbar .menu-link:hover,
+.navbar .menu-link:focus-visible {
+  color: var(--gold-titles);
+}
+
+.navbar .menu-link:hover {
+  transform: scale(1.05);
+  font-weight: 700;
+}
+
+/* Desplegable de servicios */
+
+.navbar .menu-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.navbar .dropdown-arrow {
+  font-size: 0.8rem;
+}
+
+.navbar .submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 0.75rem;
+}
+
+.navbar .menu-dropdown:hover .submenu,
+.navbar .menu-dropdown:focus-within .submenu {
+  display: flex;
+}
+
+.navbar .submenu-link {
+  font-size: 0.82rem;
+  text-transform: none;
+}
+
+/* CTA */
+
+.navbar .nav-cta {
+  margin-top: 0.75rem;
+  color: #0d1b2e;
+  background: var(--gold-titles, #f59e0b);
+  border: none;
+  border-radius: 6px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.navbar .nav-cta:hover,
+.navbar .nav-cta:focus-visible {
+  filter: brightness(1.08);
+}
+
+.navbar a.nav-cta.whatsapp-cta,
+.navbar a.nav-cta.whatsapp-cta:hover,
+.navbar a.nav-cta.whatsapp-cta:focus-visible {
+  background-color: var(--whatsapp-green);
+  color: var(--text-white);
+  filter: none;
+  opacity: 1;
+}
+
+.navbar a.nav-cta.whatsapp-cta:hover,
+.navbar a.nav-cta.whatsapp-cta:focus-visible {
+  background-color: var(--whatsapp-green-hover);
+}
+
+/* Tablet y escritorio */
+
+@media (min-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    padding: 0;
+    border-top: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-container {
+    min-height: 76px;
+    align-items: stretch;
+  }
+
+  .navbar .menu-icon {
+    display: none;
+  }
+
+  .navbar .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: auto;
+    padding: 0;
+    gap: 0.25rem;
+  }
+
+  .navbar .menu-item-link {
+    min-height: 76px;
+  }
+
+  .navbar .menu-dropdown {
+    position: relative;
+  }
+
+  .navbar .menu-dropdown-toggle {
+    justify-content: center;
+  }
+
+  .navbar .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    padding: 0.5rem;
+    background: var(--bg-header-footer, var(--bg-dark));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar .submenu-link {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .navbar .menu-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border: none;
+  }
+
+  .navbar .menu-dropdown-toggle {
+    width: auto;
+    text-align: center;
+  }
+
+  .navbar .submenu-link:hover,
+  .navbar .submenu-link:focus-visible {
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  .navbar .nav-cta {
+    min-height: auto;
+    margin: 0 0 0 0.5rem;
+    padding: 0.8rem 1rem;
+    white-space: nowrap;
+  }
+}
+
+/* Foco accesible */
+
+.navbar .menu-toggle:focus-visible + .menu-icon {
+  outline: 2px solid var(--gold-titles, #f59e0b);
+  outline-offset: 4px;
+}
+
+/* Movimiento reducido */
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar *,
+  .navbar *::before,
+  .navbar *::after {
+    transition: none !important;
+  }
+}

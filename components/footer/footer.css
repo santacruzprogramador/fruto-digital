@@ -1,0 +1,337 @@
+/* ========================================
+   FOOTER: CTA y pie de página
+======================================== */
+
+.footer-cta {
+  padding: clamp(2.5rem, 6vw, 4.5rem) 1rem;
+  color: #fff;
+  background: #152a47;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-cta-content {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.footer-eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--gold-titles, #f59e0b);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.footer-cta h2 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  line-height: 1.25;
+}
+
+.footer-cta-description {
+  max-width: 54ch;
+  margin: 0 auto 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.footer-cta-primary {
+  color: #0d1b2e;
+  background: var(--gold-titles, #f59e0b);
+}
+
+/* Formulario de auditoría en el CTA del footer */
+
+.footer-audit-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 620px;
+  margin: 1.5rem auto 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 14px;
+  background: rgb(13 27 46 / 55%);
+  text-align: left;
+}
+
+.footer-audit-field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.footer-audit-field label {
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.footer-audit-field input {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  background: #0d1b2e;
+  color: #fff;
+  font: inherit;
+}
+
+.footer-audit-field input::placeholder {
+  color: #94a3b8;
+}
+
+.footer-audit-field input:focus-visible {
+  outline: 2px solid var(--gold-titles, #f59e0b);
+  outline-offset: 2px;
+}
+
+.footer-audit-form .footer-cta-primary {
+  min-height: 46px;
+  border: 0;
+  border-radius: 8px;
+  color: #0d1b2e;
+  background: var(--gold-titles, #f59e0b);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.footer-audit-form .footer-cta-primary:hover {
+  filter: brightness(1.08);
+}
+
+/* Footer principal */
+
+.footer {
+  padding: 1.5rem 1rem calc(1.25rem + 64px);
+  color: #fff;
+  background: var(--bg-header-footer, #0d1b2e);
+}
+
+.footer .container {
+  width: 100%;
+  max-width: var(--max-width, 1200px);
+  margin-inline: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.25rem 1rem;
+}
+
+/* Marca */
+
+.footer-brand {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-logo-mark {
+  display: flex;
+  flex: 0 0 40px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--gold-titles, #f59e0b);
+  background: #152a47;
+  border: 1px solid var(--gold-titles, #f59e0b);
+  border-radius: 7px;
+  font-weight: 800;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.footer-logo-name {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.footer-logo-tagline {
+  color: #cbd5e1;
+  font-size: 0.75rem;
+}
+
+.footer-brand-description,
+.footer-location {
+  margin: 0.55rem 0 0;
+  color: #94a3b8;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+/* Grupos de enlaces */
+
+.footer-group {
+  flex: 1 1 145px;
+  min-width: 0;
+}
+
+.footer-group h2 {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-group a {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.footer-group a:hover {
+  color: var(--gold-titles, #f59e0b);
+}
+
+/* Redes sociales */
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.footer-social .social {
+  display: grid;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 7px;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.footer-social .social svg {
+  width: 21px;
+  height: 21px;
+}
+
+.footer-social .whatsapp {
+  background: #25d366;
+}
+
+.footer-social .instagram {
+  background: linear-gradient(135deg, #405de6, #e1306c, #fcaf45);
+}
+
+.footer-social .tiktok {
+  background: #111;
+  border: 1px solid #526078;
+}
+
+.footer-social .social:hover {
+  transform: translateY(-2px);
+}
+
+/* Copyright */
+
+.footer-bottom {
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-copy {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Escritorio */
+
+@media (min-width: 768px) {
+  .footer-cta {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .footer-audit-form {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+
+  .footer-audit-form button {
+    grid-column: 1 / -1;
+  }
+
+  .footer {
+    padding: 2rem 1.5rem 1.25rem;
+  }
+
+  .footer-columns {
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+
+  .footer-brand {
+    flex: 1.3 1 0;
+  }
+
+  .footer-group {
+    flex: 1 1 0;
+  }
+
+  .footer-bottom {
+    margin-top: 0.25rem;
+  }
+}
+
+/* Accesibilidad */
+
+.footer a:focus-visible {
+  outline: 2px solid var(--gold-titles, #f59e0b);
+  outline-offset: 3px;
+}
+
+.footer-cta a:focus-visible,
+.footer-cta button:focus-visible {
+  outline: 2px solid var(--gold-titles, #f59e0b);
+  outline-offset: 3px;
+}
+
+/* Movimiento reducido */
+
+@media (prefers-reduced-motion: reduce) {
+  .footer *,
+  .footer *::before,
+  .footer *::after {
+    transition: none !important;
+  }
+}

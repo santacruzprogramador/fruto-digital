@@ -19,42 +19,36 @@ El proyecto está orientado a crear sitios web **responsive, optimizados para bu
 ## 📂 Estructura
 
 ```text
-├── assets/
-│   ├── favicon/
-│   ├── fonts/
-│   ├── icons/
-│   └── imagen/
-│
+├── assets/                       # Favicons, fuentes, iconos e imágenes
 ├── blog/
-│   ├── articulos/
+│   ├── articulos/                # Artículos del blog
 │   ├── categorias/
-│   ├── css/
+│   ├── css/                      # Estilos del blog y artículos
 │   ├── imagen/
 │   ├── js/
-│   └── index.html
-│
+│   └── index.html                # Índice del blog
+├── components/
+│   ├── footer/                   # Pie compartido
+│   └── nav/                      # Navegación compartida
 ├── css/
-│   └── styles.css
-│
+│   └── styles.css                # Estilos globales
+├── faq/
+│   └── index.html                # Preguntas frecuentes
 ├── js/
 │   └── main.js
-│
-├── promociones/
-│   └── index.html
-│
 ├── servicios/
-│   └── index.html
-│
-├── sobre-mi/
-│   └── index.html
-│
-├── index.html
+│   ├── auditoria-seo/
+│   ├── landing-page/
+│   ├── tienda-online/
+│   └── web-corporativa/
+├── index.html                    # Página principal
 ├── llms.txt
 ├── robots.txt
 ├── sitemap.xml
-├── SEO.md
 └── README.md
 ```
+
+El sitio está organizado como páginas HTML estáticas con estilos CSS y JavaScript. La navegación y el pie se cargan desde componentes compartidos.
 
 ## 🔎 SEO
 

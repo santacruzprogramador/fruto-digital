@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    TITLE (On-Page SEO - Factor de ranking fuerte)
+    ══════════════════════════════════════════════════════════════
+    Google usa el <title> como una de las señales más importantes 
+    para entender el tema de la página y para mostrarlo en los 
+    resultados de búsqueda.
+
+    Documentación oficial:
+    https://developers.google.com/search/docs/appearance/title-link
+
+    Reglas recomendadas por Google:
+    - Debe contener la palabra clave principal
+    - Ideal entre 50-60 caracteres
+    - Debe ser único en todo el sitio
+  -->
+  <title>¿Cuánto cuesta una página web?</title>
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    META DESCRIPTION (Afecta el CTR)
+    ══════════════════════════════════════════════════════════════
+    No es un factor de ranking directo, pero Google suele usarla 
+    como snippet en los resultados de búsqueda. Influye fuertemente 
+    en la tasa de clics (CTR).
+
+    Documentación:
+    https://developers.google.com/search/docs/appearance/snippet
+  -->
+  <meta name="description" content="Cuánto cuesta una página web: precio de landing, página institucional y tienda online. Presupuesto real y qué incluye cada diseño web.">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    CANONICAL (Técnico SEO - Evita contenido duplicado)
+    ══════════════════════════════════════════════════════════════
+    Le indica a Google cuál es la versión oficial de esta página.
+    Evita que se diluya la autoridad si la misma página se puede 
+    acceder por diferentes URLs.
+
+    Documentación:
+    https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+  -->
+  <link rel="canonical" href="https://frutodigital.com/blog/articulos/cuanto-cuesta-una-pagina-web/">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    ROBOTS META (Técnico SEO)
+    ══════════════════════════════════════════════════
+    Controla cómo los buscadores deben tratar esta página.
+    - index, follow → permite indexar y seguir los enlaces
+    - max-image-preview:large → permite imágenes grandes en resultados
+  -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    OPEN GRAPH (Social SEO / CTR)
+    ══════════════════════════════════════════════════════════════
+    Controla cómo se ve la página cuando se comparte en 
+    Facebook, WhatsApp, LinkedIn, etc.
+    No afecta el ranking de Google directamente, pero mejora 
+    mucho la tasa de clics desde redes sociales.
+  -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Fruto Digital">
+  <meta property="og:title" content="¿Cuánto cuesta una página web?">
+  <meta property="og:description" content="Cuánto cuesta una página web: precio de landing, página institucional y tienda online. Presupuesto real y qué incluye cada diseño web.">
+  <meta property="og:url" content="https://frutodigital.com/blog/articulos/cuanto-cuesta-una-pagina-web/">
+  <meta property="og:image" content="https://frutodigital.com/blog/imagen/cuanto-cuesta-una-pagina-web.webp">
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="¿Cuánto cuesta una página web? | Fruto Digital">
+  <meta name="twitter:description" content="Cuánto cuesta una página web: precio de landing, página institucional y tienda online. Presupuesto real y qué incluye cada diseño web.">
+  <meta name="twitter:image" content="https://frutodigital.com/blog/imagen/cuanto-cuesta-una-pagina-web.webp">
+  <meta property="article:published_time" content="2026-10-21T00:00:00-03:00">
+  <meta property="article:author" content="José Santacruz">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    FAVICON + THEME-COLOR
+    ══════════════════════════════════════════════════
+    Mejora la identificación de la marca en pestañas y resultados.
+    theme-color cambia el color de la barra del navegador en móviles.
+    
+    Rutas corregidas según la estructura real del proyecto:
+    desde blog/articulos/conviene-hacer-web-con-ia-o-profesional/
+  -->
+  <link rel="icon" href="../../../assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="../../../assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../../assets/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#0f766e">
+
+    <!-- CSS del blog: estilos compartidos y estilos específicos por sección. -->
+
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../../css/styles.css">
+
+  <!-- 
+    ══════════════════════════════════════════════════════════════
+    SCHEMA.ORG - BlogPosting (Datos Estructurados)
+    ══════════════════════════════════════════════════════════════
+    Documentación oficial de Google:
+    https://developers.google.com/search/docs/appearance/structured-data/article
+
+    Ayuda a Google a identificar:
+    - Que esta página es un artículo
+    - Título, autor, fechas de publicación y modificación
+    - Imagen principal
+    - Puede habilitar rich results (resultados enriquecidos)
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Cuánto cuesta una página web?",
+    "description": "Cuánto cuesta una página web: precio de landing, página institucional y tienda online. Presupuesto real y qué incluye cada diseño web.",
+    "image": [
+      "https://frutodigital.com/blog/imagen/cuanto-cuesta-una-pagina-web.webp"
+    ],
+    "datePublished": "2026-10-21T00:00:00-03:00",
+    "dateModified": "2026-10-21T00:00:00-03:00",
+    "author": {
+      "@type": "Person",
+      "name": "José Santacruz"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fruto Digital",
+      "url": "https://frutodigital.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://frutodigital.com/assets/favicon/favicon.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://frutodigital.com/blog/articulos/cuanto-cuesta-una-pagina-web/"
+    }
+  }
+  </script>
+
+  <!-- Google Tag Manager: load after the page has finished and the browser is idle. -->
+  <script>
+  (function(w,d){
+    var loaded = false;
+    function loadGTM(){
+      if (loaded) return;
+      loaded = true;
+      w.dataLayer = w.dataLayer || [];
+      w.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var script = d.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-T6VM5WFC';
+      d.head.appendChild(script);
+    }
+    function scheduleGTM(){
+      if (w.requestIdleCallback) {
+        w.requestIdleCallback(loadGTM, {timeout: 2000});
+      } else {
+        w.setTimeout(loadGTM, 1000);
+      }
+    }
+    if (d.readyState === 'complete') scheduleGTM();
+    else w.addEventListener('load', scheduleGTM, {once: true});
+  })(window,document);
+  </script>
+  <!-- End Google Tag Manager -->
+
+  
+  <link rel="ai-catalog" href="/.well-known/ai-catalog.json" type="application/ai-catalog+json">
+  <!-- Componentes compartidos -->
+  <script src="../../../components/nav/nav.js" defer></script>
+  <script src="../../../components/footer/footer.js" defer></script>
+
+</head>
+
+<body class="article-page">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6VM5WFC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+   
+  <!-- =========================================
+       NAV SECTION
+       ========================================= -->
+  <div id="nav-container"></div>
+
+  <main class="site-main">
+
+    <!-- 
+      ══════════════════════════════════════════════════════════════
+      CABECERA DEL ARTÍCULO (HERO)
+      ══════════════════════════════════════════════════════════════
+      Google recomienda:
+      - Un solo <h1> por página
+      - El H1 debe contener la palabra clave principal
+      - El párrafo o byline debajo del H1 ayuda a generar snippets
+        y a entender el contexto del contenido
+
+      Documentación:
+      https://developers.google.com/search/docs/appearance/title-link
+    -->
+
+      <section class="article-hero" aria-labelledby="titulo-articulo">
+        
+        <!-- Imagen en HTML optimizada para SEO y Core Web Vitals -->
+        <img 
+          src="../../imagen/cuanto-cuesta-una-pagina-web.webp" 
+          alt="Infografía futurista que representa el presupuesto y costos de diseño de una página web, landing page y tienda online" 
+          class="article-hero-img"
+          width="1920" 
+          height="1080"
+          fetchpriority="high"
+        >
+
+        <div class="article-hero-content">
+          <!-- H1: Único por página con la keyword exacta -->
+          <h1 id="titulo-articulo">¿Cuánto cuesta una página web?</h1>
+
+          <!-- Byline con marcado E-E-A-T -->
+          <p class="byline">
+            <span class="author-name">José Santacruz</span>
+            ·
+            <time datetime="2026-10-21">21 de octubre de 2026</time>
+          </p>
+        </div>
+      </section>    
+
+
+    <!-- 
+      ══════════════════════════════════════════════════════════════
+      LAYOUT DEL CONTENIDO
+      ══════════════════════════════════════════════════════════════
+    -->
+    <div class="content-layout-container">
+
+      <!-- 
+        ÍNDICE (Table of Contents)
+        ════════════════════════════════════════════════════════
+        Mejora la experiencia de usuario y ayuda a Google a 
+        entender la estructura del contenido.
+        Los enlaces internos con anclas (#) también son señales 
+        positivas de navegación.
+      -->
+      <aside class="sidebar-index">
+        <h3><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Índice</h3>
+        <nav aria-label="Índice del artículo">
+          <ul>
+            <li><a href="#introduccion" title="1. Introducci&#243;n">1. Introducción</a></li>
+            <li><a href="#precio-pagina-web" title="2. Precio de una página web">2. Precio de una página web</a></li>
+            <li><a href="#presupuesto-pagina-web" title="3. Qué incluye el presupuesto de una página web">3. Qué incluye el presupuesto de una página web</a></li>
+            <li><a href="#factores-precio-pagina-web" title="4. Factores que afectan el precio">4. Factores que afectan el precio</a></li>
+            <li><a href="#costos-ocultos-pagina-web" title="5. Costos ocultos que nadie te dice">5. Costos ocultos que nadie te dice</a></li>
+            <li><a href="#conclusion" title="6. Conclusi&#243;n y recomendaci&#243;n">6. Conclusión y recomendación</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- 
+        ARTÍCULO PRINCIPAL
+        ════════════════════════════════════════════════════════
+        Usamos <article> porque Google recomienda esta etiqueta 
+        semántica para el contenido principal de tipo artículo.
+
+        Documentación: HTML semantics + Structured Data
+      -->
+<article class="main-article">
+
+  <section id="introduccion" class="article-section">
+    <h2>1. Introducción</h2>
+    <p>
+      <strong>¿Cuánto cuesta una página web en Argentina?</strong> El precio arranca en <strong>$250.000 ARS (USD 160)</strong> para una <em>landing page</em> enfocada en conversión y supera los <strong>$1.500.000 ARS (USD 970)</strong> en e-commerce complejos. En este artículo desglosamos los costos reales por tipo de sitio y explicamos cómo el SEO técnico transforma una web en un activo comercial que atrae clientes sin depender de pauta publicitaria constante. Los valores en USD usan una cotización de referencia de $1.550 ARS/USD (dólar oficial, octubre 2026).
+    </p>
+  </section>
+
+  <section id="precio-pagina-web" class="article-section">
+    <h2>2. Precio de una página web</h2>
+    
+    <p>Antes de ver cada tipo en detalle, acá está el precio de una página web en Argentina según categoría. Los valores no incluyen hosting, dominio ni mantenimiento anual.</p>
+    <p>Son rangos orientativos: el precio final depende del alcance y las funciones incluidas. Los planes de <a href="../../../#servicios">servicios</a> pueden tener otro alcance y condiciones; compará qué incluye cada propuesta.</p>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Tipo de página web</th>
+            <th scope="col">Precio estimado</th>
+            <th scope="col">Plazo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Landing page</th>
+            <td>$250.000 – $450.000 ARS <br><small>(USD 160 – USD 290)</small></td>
+            <td>1 a 2 semanas</td>
+          </tr>
+          <tr>
+            <th scope="row">Página institucional</th>
+            <td>$450.000 – $1.200.000 ARS <br><small>(USD 290 – USD 775)</small></td>
+            <td>2 a 4 semanas</td>
+          </tr>
+          <tr>
+            <th scope="row">Tienda online</th>
+            <td>$1.200.000 – $3.000.000 ARS <br><small>(USD 775 – USD 1.935)</small></td>
+            <td>4 a 8 semanas</td>
+          </tr>
+          <tr>
+            <th scope="row">Página a medida</th>
+            <td>$3.000.000 ARS en adelante <br><small>(USD 1.935+)</small></td>
+            <td>8 semanas o más</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>¿Cuándo conviene elegir una landing page?</h3>
+      <p>Es ideal si tenés un objetivo único: captar consultas o vender un servicio concreto. Es la opción más económica y rápida para validar una propuesta o acompañar campañas publicitarias.</p>
+
+      <h3>¿Qué incluye una página web institucional?</h3>
+      <p>Presenta tu empresa con estructura profesional (Inicio, Servicios, Nosotros, Contacto). Es el formato estándar para transmitir solvencia, construir autoridad de marca y posicionar en Google.</p>
+
+      <h3>¿Qué define el precio de una tienda online?</h3>
+      <p>Cubre catálogo de productos, carrito de compras, pasarelas de pago y gestión de envíos. El valor final depende del volumen de artículos, control de stock e integraciones logísticas.</p>
+
+      <h3>¿Cuándo se necesita un desarrollo a medida?</h3>
+      <p>Se requiere para funciones complejas como sistemas de turnos, áreas privadas para clientes o conexiones API con software interno. Representa la solución de mayor complejidad técnica.</p>
+  </section>
+
+  <section id="presupuesto-pagina-web" class="article-section">
+    <h2>3. Qué incluye el presupuesto de una página web</h2>
+    
+    <p>Comparar presupuestos sin mirar qué incluye cada uno es un error común. Un precio bajo resulta caro si no trae lo indispensable:</p>
+
+    <h3>Dominio y hosting</h3>
+    <p>El dominio <code>.com.ar</code> cuesta <strong>$8.500 ARS/año</strong> (NIC Argentina, tanto el alta como la renovación) y un hosting rápido ronda los <strong>$40.000 – $80.000 ARS/año</strong> <small>(USD 26 – USD 52/año)</small>. Preguntá siempre si están incluidos o representan un gasto extra.</p>
+
+    <h3>Diseño, desarrollo y velocidad</h3>
+    <p>Es el núcleo del trabajo: programación, diseño adaptable a celulares, certificado SSL y optimización de carga. No pagás solo estética, sino una estructura técnica enfocada en SEO y conversión.</p>
+
+    <h3>Carga de contenido inicial</h3>
+    <p>Aclará si el desarrollador sube y maqueta tus textos, imágenes y productos, o si tenés que hacerlo vos. Esto modifica el costo total y el tiempo de entrega.</p>
+
+    <h3>Mantenimiento y soporte</h3>
+    <p>Las webs requieren actualizaciones y copias de seguridad. El soporte post-lanzamiento o mantenimiento suele cotizarse por separado, desde <strong>$25.000 ARS/mes</strong> <small>(USD 16/mes)</small>.</p>
+  </section>
+
+  <section id="factores-precio-pagina-web" class="article-section">
+    <h2>4. Qué factores suben el precio de una página web</h2>
+
+    <p>No todos los sitios requieren la misma carga de trabajo. Si querés entender cuánto cuesta una página web en Argentina o por qué dos presupuestos difieren tanto, estos son los factores determinantes:</p>
+
+    <h3>Cantidad de páginas y secciones</h3>
+    <p>Una <i>landing page</i> de 1 sección no exige el mismo esfuerzo que un sitio de 5 o 10 páginas. Cada sección adicional suma entre <strong>$40.000 y $80.000 ARS</strong> <small>(USD 26 – USD 52)</small> por maquetación, redacción y optimización SEO individual.</p>
+
+    <h3>Funcionalidades avanzadas e interactivas</h3>
+    <p>Sistemas de turnos online, calculadoras de presupuestos o buscadores con filtros avanzados agregan lógica de programación adicional, incrementando el costo base entre un <strong>30% y un 60%</strong>.</p>
+
+    <h3>Integraciones con WhatsApp, pasarelas y sistemas externos</h3>
+    <p>Conectar la web con botones directo a WhatsApp Business es rápido. Sin embargo, integrar cobros automáticos con Mercado Pago, APIs de logística o sistemas de facturación/ERP requiere pruebas técnicas que pueden sumar desde <strong>$80.000 ARS</strong> <small>(USD 52+)</small> al presupuesto.</p>
+
+    <h3>Freelancer vs. Agencia</h3>
+    <p>Un freelancer cobra solo por su tiempo directo (proyectos típicos entre <strong>$250.000 y $800.000 ARS</strong> <small>/ USD 160 – USD 515</small>). Una agencia cotiza más alto (superando los <strong>$1.500.000 ARS</strong> <small>/ USD 970+</small>) para cubrir costos operativos y un equipo multirrol.</p>
+  </section>
+
+  <section id="costos-ocultos-pagina-web" class="article-section">
+    <h2>5. Costos ocultos que nadie te dice</h2>
+
+    <p>Además del desarrollo inicial, hay gastos fijos recurrentes que tenés que considerar para mantener la web activa:</p>
+
+    <h3>Hosting anual</h3>
+    <p>Un servidor rápido y seguro ronda los <strong>$40.000 – $80.000 ARS/año</strong> <small>(USD 26 – USD 52/año)</small>. Desconfiá del hosting "gratis": vuelve la web lenta y provoca caídas constantes.</p>
+
+    <h3>Renovación del dominio</h3>
+    <p>Se paga todos los años. Un <code>.com.ar</code> en NIC Argentina cuesta <strong>$8.500 ARS/año</strong> y un <code>.com</code> unos <strong>$18.000 ARS/año</strong> <small>(USD 12/año)</small>. Si no renovás, perdés la dirección y el posicionamiento.</p>
+
+    <h3>Actualizaciones y seguridad</h3>
+    <p>Las webs necesitan parches de seguridad y respaldos. Si no lo hacés vos, un mantenimiento básico parte de los <strong>$25.000 ARS/mes</strong> <small>(USD 16/mes)</small>.</p>
+
+    <h3>Posicionamiento SEO continuo</h3>
+    <p>El diseño deja la web lista para posicionar, pero aparecer primero en Google requiere trabajo mensual activo de SEO, el cual no está incluido en la creación del sitio.</p>
+  </section>        
+
+  <section id="conclusion" class="article-section">
+    <h2>6. Conclusión: Inversión vs. Retorno</h2>
+    
+    <p>En el mercado argentino, el precio de una página web refleja directamente el nivel de estrategia, rendimiento técnico y potencial de venta que ofrece. Un sitio económico suele transformarse en un gasto; una web optimizada es un canal constante de nuevos clientes.</p>
+
+    <p>Para tomar la mejor decisión, evaluá estos tres puntos clave antes de contratar:</p>
+    <ul>
+      <li><strong>Claridad en los costos recurrentes:</strong> Asegurate de saber de antemano qué valores corresponden a hosting, dominio y mantenimiento futuro.</li>
+      <li><strong>Enfoque en velocidad y SEO:</strong> Confirmá que el desarrollo incluya optimización móvil y código limpio preparado para posicionar en Google.</li>
+      <li><strong>Alcance real del proyecto:</strong> Elegí la estructura exacta que tu negocio necesita hoy (Landing, Institucional o E-commerce) sin pagar por funciones innecesarias.</li>
+    </ul>
+
+    <p>La clave no es buscar la opción más barata, sino la que ofrezca mayor solidez técnica y transparencia en su propuesta.</p>
+  </section>
+
+</article>
+
+      <!-- 
+        COMPARTIR
+        ════════════════════════════════════════════════════════
+        Los botones de compartir mejoran el alcance del contenido.
+        Google valora el engagement y las señales sociales 
+        de forma indirecta.
+      -->
+      <aside class="sidebar-share">
+        <h3>Compartir</h3>
+        <div class="share-buttons">
+          <a href="https://twitter.com/intent/tweet?text=%C2%BFCu%C3%A1nto%20cuesta%20una%20p%C3%A1gina%20web%3F&url=https%3A%2F%2Ffrutodigital.com%2Fblog%2Farticulos%2Fcuanto-cuesta-una-pagina-web%2F" 
+             target="_blank" rel="noopener noreferrer" class="share-btn twitter" title="Compartir en Twitter">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.6 22H2.5l7.3-8.4L1.8 2h6.4l4.5 6.8L18.9 2zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffrutodigital.com%2Fblog%2Farticulos%2Fcuanto-cuesta-una-pagina-web%2F" 
+             target="_blank" rel="noopener noreferrer" class="share-btn linkedin" title="Compartir en LinkedIn">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52zM8 19H5V9h3v10zM6.5 7.73A1.73 1.73 0 1 1 6.5 4.27a1.73 1.73 0 0 1 0 3.46zM19 19h-3v-4.87c0-1.16-.02-2.65-1.62-2.65-1.62 0-1.87 1.26-1.87 2.57V19h-3V9h2.88v1.37h.04A3.16 3.16 0 0 1 15.28 8c3.04 0 3.72 2 3.72 4.6V19z"/></svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?text=%C2%BFCu%C3%A1nto%20cuesta%20una%20p%C3%A1gina%20web%3F%20https%3A%2F%2Ffrutodigital.com%2Fblog%2Farticulos%2Fcuanto-cuesta-una-pagina-web%2F" 
+             target="_blank" rel="noopener noreferrer" class="share-btn whatsapp" title="Compartir en WhatsApp">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.8 17.7L2 22l4.5-1.8A11 11 0 1 0 20.5 3.5zM12 20a8.8 8.8 0 0 1-4.5-1.2l-.3-.2-2.7 1.1 1.1-2.6-.2-.4A8.9 8.9 0 1 1 12 20zm4.9-6.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1a7.2 7.2 0 0 1-3.6-3.2c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.5-.1-.2-.7-1.7-1-2.3-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.5 1.1 2.7a10.3 10.3 0 0 0 4 3.8c2.4 1 2.4.7 2.8.7.4 0 1.3-.5 1.5-1 .2-.5.2-1 .2-1.1 0-.1-.2-.2-.5-.4z"/></svg>
+          </a>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- 
+      CTA FINAL
+      ════════════════════════════════════════════════════════
+      Google valora que el contenido resuelva la intención 
+      del usuario. Un llamado a la acción claro al final 
+      ayuda a la conversión y a la experiencia de usuario.
+    -->
+
+
+      <section id="contacto" class="cta-section">
+      <h2>¿Necesitás una página web profesional para tu negocio?</h2>
+      <p>Trabajo con negocios que quieren una presencia online clara, rápida y orientada a resultados.</p>
+      <a href="../../../#servicios" class="cta-btn" title="Ver soluciones para tu negocio">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 2.3a1 1 0 0 0-1.05-.23L2.4 9.1a1 1 0 0 0 .08 1.89l7.4 2.4 2.4 7.4a1 1 0 0 0 .92.69h.05a1 1 0 0 0 .92-.78l7.8-17.4a1 1 0 0 0-.27-1.01zM11 12.3l7.5-6.5-6.5 7.5-.5 4.2-1.5-4.7-4.7-1.5 4.2-0.5z"/></svg> Ver servicios
+      </a>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <!-- 
+    JS
+    Ruta corregida: scripts.js está en blog/js/
+  -->
+  <script src="../../js/scripts.js" defer></script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+    integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw=="
+    data-cf-beacon='{"version":"2024.11.0","token":"e1b87a150ada40faa0e5e7e51b388e99","r":1,"spa":2}'
+    crossorigin="anonymous"></script>
+</body>
+</html>

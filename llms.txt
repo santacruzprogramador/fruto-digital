@@ -1,21 +1,27 @@
 # Fruto Digital
 
-> Fruto Digital diseña y desarrolla sitios web para negocios, profesionales y emprendedores en Misiones y toda Argentina.
+> Fruto Digital diseña y desarrolla sitios web para negocios, profesionales y emprendedores. Tiene base en Jardín América, Misiones, y brinda atención en toda Argentina.
 
-Fruto Digital tiene base en Jardín América, Misiones, y brinda atención remota en Argentina. Ofrece sitios web personalizados para negocios, profesionales, tiendas online e inmobiliarias, con diseño adaptable, SEO técnico y SEO on-page. También ofrece mantenimiento mensual. Para solicitar información o presupuesto, se puede contactar por WhatsApp.
+El sitio presenta servicios de diseño web, catálogo digital y auditoría SEO. Las páginas son adaptables a celulares y computadoras. Las consultas y solicitudes de presupuesto se realizan por WhatsApp.
 
 ## Páginas principales
 
-- [Inicio](https://frutodigital.com/): presentación de Fruto Digital y sus soluciones de diseño web.
-- [Servicios](https://frutodigital.com/servicios/): planes de diseño y desarrollo web para negocios.
-- [Promociones](https://frutodigital.com/promociones/): opciones y promociones vigentes de diseño web.
-- [Sobre mí](https://frutodigital.com/sobre-mi/): información sobre el profesional y su trabajo.
-- [Blog](https://frutodigital.com/blog/): artículos sobre desarrollo web, SEO e inteligencia artificial aplicada a negocios.
+- [Inicio](https://frutodigital.com/): presentación del negocio y resumen de sus soluciones.
+- [Preguntas frecuentes](https://frutodigital.com/faq/): respuestas sobre servicios, proceso, plazos, pagos, mantenimiento y auditoría SEO.
+- [Blog](https://frutodigital.com/blog/): guías sobre desarrollo web, SEO e inteligencia artificial para negocios.
+
+## Servicios
+
+- [Landing page](https://frutodigital.com/servicios/landing-page/): páginas enfocadas en presentar una oferta y generar consultas.
+- [Web corporativa](https://frutodigital.com/servicios/web-corporativa/): sitio para presentar una empresa, sus servicios y su información.
+- [Catálogo digital](https://frutodigital.com/servicios/tienda-online/): catálogo de productos con consultas por WhatsApp.
+- [Auditoría SEO](https://frutodigital.com/servicios/auditoria-seo/): revisión inicial para detectar oportunidades de mejora SEO.
 
 ## Artículos
 
-- [Mi página web no aparece en Google: qué revisar](https://frutodigital.com/blog/articulos/mi-pagina-web-no-aparece-en-google/): causas comunes de falta de indexación y pasos para revisar una página.
-- [¿Conviene hacer una página web con IA o contratar a un profesional?](https://frutodigital.com/blog/articulos/conviene-hacer-web-con-ia-o-profesional/): comparación entre crear una web con herramientas de IA y contratar a un profesional.
+- [Mi página web no aparece en Google: qué revisar](https://frutodigital.com/blog/articulos/mi-pagina-web-no-aparece-en-google/): cómo revisar indexación y posibles causas de falta de visibilidad.
+- [¿Conviene hacer una página web con IA o contratar a un profesional?](https://frutodigital.com/blog/articulos/conviene-hacer-web-con-ia-o-profesional/): comparación de ambas opciones para un negocio.
+- [¿Cuánto cuesta una página web?](https://frutodigital.com/blog/articulos/cuanto-cuesta-una-pagina-web/): precios orientativos y factores que afectan el presupuesto.
 
 ## Contacto
 
