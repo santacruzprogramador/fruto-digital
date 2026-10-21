@@ -215,7 +215,7 @@ img {
 }
 
 .btn-hero-primary {
-  background-color: var(--bg-blue);
+  background-color: #1d4ed8;
   color: var(--text-white);
   box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
 }
@@ -1268,7 +1268,7 @@ a.whatsapp-cta:focus-visible {
   cursor: pointer;
   list-style: none;
 }
-.faq-question h4 {
+.faq-question h3 {
   margin: 0;
   color: var(--text-main);
   font: inherit;
