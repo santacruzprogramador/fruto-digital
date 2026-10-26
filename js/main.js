@@ -58,3 +58,26 @@
     }
   });
 })();
+
+/* ********** Solicitud de auditoría SEO por WhatsApp **********
+   Este bloque prepara un único mensaje con el nombre opcional y el sitio web,
+   codifica el texto para la URL de WhatsApp y abre la conversación al enviar.
+*/
+(() => {
+  const form = document.querySelector('.auditoria-solicitud-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const nombre = document.getElementById('auditoria-nombre').value.trim();
+    const sitio = document.getElementById('auditoria-url').value.trim();
+    const mensaje = [
+      nombre ? `Hola, soy ${nombre}.` : '',
+      `Quiero solicitar una auditoría SEO para este sitio: ${sitio}`
+    ].filter(Boolean).join('\n');
+    const whatsappUrl = `https://wa.me/5493743615520?text=${encodeURIComponent(mensaje)}`;
+
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  });
+})();
