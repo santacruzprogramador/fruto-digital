@@ -74,7 +74,12 @@
   <meta property="og:title" content="¿Conviene hacer una página web con IA o contratar a un profesional?">
   <meta property="og:description" content="La IA permite crear una página web rápidamente, pero no todas las necesidades de un negocio son iguales.">
   <meta property="og:url" content="https://frutodigital.com/blog/articulos/conviene-hacer-web-con-ia-o-profesional/">
-  <meta property="og:image" content="https://frutodigital.com/blog/imagen/conviene-hacer-una-pagina-web-con-ia-o-contratar-a-un-profesional.webp">
+  <meta property="og:image" content="https://frutodigital.com/blog/imagen/web-con-ia-o-profesional.webp">
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="¿Conviene hacer una página web con IA o contratar a un profesional? | Fruto Digital">
+  <meta name="twitter:description" content="La IA permite crear una página web rápidamente, pero no todas las necesidades de un negocio son iguales.">
+  <meta name="twitter:image" content="https://frutodigital.com/blog/imagen/web-con-ia-o-profesional.webp">
   <meta property="article:published_time" content="2026-09-25T00:00:00-03:00">
   <meta property="article:author" content="José Santacruz">
 
@@ -93,20 +98,9 @@
   <link rel="apple-touch-icon" href="../../../assets/favicon/apple-touch-icon.png">
   <meta name="theme-color" content="#0f766e">
 
-  <!-- 
-    ══════════════════════════════════════════════════════════════
-    ESTILOS CSS
-    ══════════════════════════════════════════════════════════════
-    Una carga rápida de CSS influye en Core Web Vitals 
-    (LCP, CLS), que sí son factores de ranking.
-    
-    Rutas corregidas:
-    - articulo.css está en blog/css/
-    - styles.css está en la raíz /css/
-  -->
-  <link rel="stylesheet" href="../../css/articulo.css">
-  <link rel="stylesheet" href="../../css/blog.css">
+    <!-- CSS del blog: estilos compartidos y estilos específicos por sección. -->
 
+  <link rel="stylesheet" href="../../css/styles.css">
   <link rel="stylesheet" href="../../../css/styles.css">
 
   <!-- 
@@ -129,14 +123,13 @@
     "headline": "¿Conviene hacer una página web con IA o contratar a un profesional?",
     "description": "La IA permite crear una página web rápidamente, pero no todas las necesidades de un negocio son iguales.",
     "image": [
-      "https://frutodigital.com/blog/imagen/conviene-hacer-una-pagina-web-con-ia-o-contratar-a-un-profesional.webp"
+      "https://frutodigital.com/blog/imagen/web-con-ia-o-profesional.webp"
     ],
     "datePublished": "2026-09-25T00:00:00-03:00",
     "dateModified": "2026-09-25T00:00:00-03:00",
     "author": {
       "@type": "Person",
-      "name": "José Santacruz",
-      "url": "https://frutodigital.com/sobre-mi/"
+      "name": "José Santacruz"
     },
     "publisher": {
       "@type": "Organization",
@@ -183,9 +176,13 @@
 
   
   <link rel="ai-catalog" href="/.well-known/ai-catalog.json" type="application/ai-catalog+json">
+  <!-- Componentes compartidos -->
+  <script src="../../../components/nav/nav.js" defer></script>
+  <script src="../../../components/footer/footer.js" defer></script>
+
 </head>
 
-<body>
+<body class="article-page">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6VM5WFC"
@@ -195,25 +192,7 @@
   <!-- =========================================
        NAV SECTION
        ========================================= -->
-  <header class="navbar">
-    <section class="container">
-      <div class="logo">Fruto Digital</div>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-      <label for="menu-toggle" class="menu-icon"><span class="visually-hidden">Abrir menú</span></label>
-      <nav class="menu">
-        <!-- 
-          Rutas de navegación corregidas.
-          Desde: blog/articulos/conviene-hacer-web-con-ia-o-profesional/
-          Subimos 3 niveles (../../../) para llegar a la raíz.
-        -->
-        <a href="../../../" title="Inicio">Inicio</a>
-        <a href="../../../sobre-mi/" title="Acerca de m&#237;">Acerca de mí</a>
-        <a href="../../../servicios/" title="Servicios">Servicios</a>
-        <a href="../../../promociones/" title="Promociones">Promociones</a>
-        <a href="../../../blog/" title="Blog">Blog</a>
-      </nav>
-    </section>
-  </header>
+  <div id="nav-container"></div>
 
   <main class="site-main">
 
@@ -251,7 +230,7 @@
           - Facilita la generación de rich results
         -->
         <p class="byline">
-          <a href="../../../sobre-mi/" rel="author" title="Jos&#233; Santacruz">José Santacruz</a>
+          <span class="author-name">José Santacruz</span>
           ·
           <time datetime="2026-09-25">25 de septiembre de 2026</time>
         </p>
@@ -389,26 +368,18 @@
       del usuario. Un llamado a la acción claro al final 
       ayuda a la conversión y a la experiencia de usuario.
     -->
-    <section id="contacto" class="cta-section">
+
+
+      <section id="contacto" class="cta-section">
       <h2>¿Necesitás una página web profesional para tu negocio?</h2>
       <p>Trabajo con negocios de Misiones que quieren una presencia online clara, rápida y orientada a resultados.</p>
-      <a href="../../../servicios/" class="cta-btn" title="Ver servicios">
+      <a href="../../../#servicios" class="cta-btn" title="Ver servicios">
         <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 2.3a1 1 0 0 0-1.05-.23L2.4 9.1a1 1 0 0 0 .08 1.89l7.4 2.4 2.4 7.4a1 1 0 0 0 .92.69h.05a1 1 0 0 0 .92-.78l7.8-17.4a1 1 0 0 0-.27-1.01zM11 12.3l7.5-6.5-6.5 7.5-.5 4.2-1.5-4.7-4.7-1.5 4.2-0.5z"/></svg> Ver servicios
       </a>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="container footer-content">
-      <nav class="footer-social">
-        <!-- tus redes sociales -->
-      </nav>
-      <p class="footer-copy">
-        © 2026 Fruto Digital. Todos los derechos reservados.
-      </p>
-    </div>
-  </footer>
+  <div id="footer-container"></div>
 
   <!-- 
     JS
@@ -416,5 +387,12 @@
   -->
   <script src="../../js/scripts.js" defer></script>
 
+  <!-- Cloudflare Web Analytics -->
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+    integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw=="
+    data-cf-beacon='{"version":"2024.11.0","token":"e1b87a150ada40faa0e5e7e51b388e99","r":1,"spa":2}'
+    crossorigin="anonymous"></script>
 </body>
 </html>
