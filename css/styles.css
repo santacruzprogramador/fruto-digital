@@ -151,7 +151,7 @@ html {
 /* Separación y ajuste automático para las secciones */
 main section:not(.faq-group) {
   scroll-snap-align: start;
-  padding-block: 4rem;
+  padding-block: 5rem;
   border-bottom: 1px solid rgba(156, 163, 175, 0.2);
 }
 
@@ -1790,6 +1790,398 @@ a.whatsapp-cta:focus-visible {
 }
 
 /* #endregion servicios - planes compartidos */
+
+/* #region servicios - características compartidas */
+/* ========================================
+   8. CARACTERÍSTICAS
+======================================== */
+.service-features {
+  padding: 3rem 1rem;
+  background-color: var(--bg-section-alt);
+  color: var(--text-white);
+}
+
+.service-features-header {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.service-features-title {
+  margin-bottom: 0.75rem;
+}
+
+.service-features-description {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.service-features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.service-feature-card {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background-color: var(--bg-dark);
+}
+
+.service-feature-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--gold-titles);
+}
+
+.service-feature-card h3 {
+  color: var(--text-white);
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.service-feature-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+@media (min-width: 768px) {
+  .service-features {
+    padding: 4rem 1.5rem;
+  }
+
+  .service-features-grid {
+    gap: 1.25rem;
+  }
+
+  .service-feature-card {
+    flex-basis: calc(50% - 0.625rem);
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-features {
+    padding: 5rem 2rem;
+  }
+
+  .service-features-grid {
+    gap: 1.5rem;
+  }
+
+  .service-feature-card {
+    flex-basis: calc(33.333% - 1rem);
+  }
+}
+/* #endregion servicios - características compartidas */
+
+/* #region servicios - cómo empezar compartido */
+/* ========================================
+   9. CÓMO EMPEZAR
+======================================== */
+.how-to-start {
+  padding: 3rem 1rem;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+}
+
+.how-to-start-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.how-to-start-intro,
+.how-to-start-steps {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+.how-to-start-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.how-to-start-eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--gold-titles);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.how-to-start-title {
+  margin-bottom: 0.75rem;
+}
+
+.how-to-start-description {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.how-to-start-button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid var(--gold-titles);
+  border-radius: 0.5rem;
+  background-color: var(--gold-titles);
+  color: var(--bg-dark);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.how-to-start-button:hover,
+.how-to-start-button:focus-visible {
+  background-color: transparent;
+  color: var(--gold-titles);
+  opacity: 1;
+}
+
+.how-to-start-button:focus-visible {
+  outline: 2px solid var(--text-white);
+  outline-offset: 3px;
+}
+
+.how-to-start-steps {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-to-start-step {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.how-to-start-step:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.how-to-start-number {
+  flex: 0 0 auto;
+  color: var(--gold-titles);
+  font-size: 1rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.how-to-start-step h3 {
+  margin-bottom: 0.35rem;
+  color: var(--text-white);
+  font-size: 1.05rem;
+}
+
+.how-to-start-step p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+@media (min-width: 768px) {
+  .how-to-start {
+    padding: 4rem 1.5rem;
+  }
+
+  .how-to-start-layout {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .how-to-start-intro {
+    flex: 0 1 42%;
+  }
+
+  .how-to-start-steps {
+    flex: 1 1 58%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .how-to-start {
+    padding: 5rem 2rem;
+  }
+
+  .how-to-start-layout {
+    gap: 5rem;
+  }
+
+  .how-to-start-step {
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+  }
+}
+/* #endregion servicios - cómo empezar compartido */
+
+/* #region servicios - ¿qué necesitás para empezar? compartido */
+/* ========================================
+   10. ¿QUÉ NECESITÁS PARA EMPEZAR?
+======================================== */
+.getting-started {
+  padding: 3rem 1rem;
+  background-color: var(--bg-section-alt);
+  color: var(--text-white);
+}
+
+.getting-started-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.getting-started-intro,
+.getting-started-list {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+.getting-started-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.getting-started-title {
+  margin-bottom: 0.75rem;
+  color: var(--gold-titles);
+}
+
+.getting-started-description {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.getting-started-button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid var(--gold-titles);
+  border-radius: 0.5rem;
+  background-color: var(--gold-titles);
+  color: var(--bg-header-footer);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.getting-started-button:hover,
+.getting-started-button:focus-visible {
+  background-color: transparent;
+  color: var(--gold-titles);
+  opacity: 1;
+}
+
+.getting-started-button:focus-visible {
+  outline: 2px solid var(--text-white);
+  outline-offset: 3px;
+}
+
+.getting-started-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.getting-started-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.getting-started-item:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.getting-started-icon {
+  flex: 0 0 1.75rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #b8860b;
+}
+
+.getting-started-item h3 {
+  margin-bottom: 0.35rem;
+  color: var(--text-white);
+  font-size: 1.05rem;
+}
+
+.getting-started-item p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+@media (min-width: 768px) {
+  .getting-started {
+    padding: 4rem 1.5rem;
+  }
+
+  .getting-started-layout {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .getting-started-intro {
+    flex: 0 1 42%;
+  }
+
+  .getting-started-list {
+    flex: 1 1 58%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .getting-started {
+    padding: 5rem 2rem;
+  }
+
+  .getting-started-layout {
+    gap: 5rem;
+  }
+
+  .getting-started-item {
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+  }
+}
+/* #endregion servicios - ¿qué necesitás para empezar? compartido */
 
 /* #region faq - compartido */
 /* ========================================

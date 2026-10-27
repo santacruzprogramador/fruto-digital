@@ -2,6 +2,7 @@ Desarrolla la página con enfoque modular, reutilizable y Mobile First.
 
 * HTML:
   * `index.html`, separado por secciones con comentarios claros (ej: `<!-- Alcance -->`).
+  * Accesibilidad: usar `alt` descriptivo en imágenes informativas y `alt=""` en imágenes decorativas. Añadir `title` a enlaces o imágenes solo cuando aporte información adicional; no usarlo como sustituto de un nombre accesible ni agregarlo únicamente para satisfacer auditorías automáticas.
 * CSS:
   * Un mismo archivo CSS organizado por secciones.
   * Solo un `:root` principal al inicio (no crear variables ni `:root` locales en las secciones).
