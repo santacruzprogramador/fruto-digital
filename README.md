@@ -39,7 +39,7 @@ El proyecto está orientado a crear sitios web **responsive, optimizados para bu
 ├── servicios/
 │   ├── auditoria-seo/
 │   ├── landing-page/
-│   ├── tienda-online/
+│   ├── catalogo-digital/
 │   └── web-corporativa/
 ├── index.html                    # Página principal
 ├── llms.txt

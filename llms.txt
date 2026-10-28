@@ -14,7 +14,7 @@ El sitio presenta servicios de diseño web, catálogo digital y auditoría SEO. 
 
 - [Landing page](https://frutodigital.com/servicios/landing-page/): páginas enfocadas en presentar una oferta y generar consultas.
 - [Web corporativa](https://frutodigital.com/servicios/web-corporativa/): sitio para presentar una empresa, sus servicios y su información.
-- [Catálogo digital](https://frutodigital.com/servicios/tienda-online/): catálogo de productos con consultas por WhatsApp.
+- [Catálogo digital](https://frutodigital.com/servicios/catalogo-digital/): catálogo de productos con consultas por WhatsApp.
 - [Auditoría SEO](https://frutodigital.com/servicios/auditoria-seo/): revisión inicial para detectar oportunidades de mejora SEO.
 
 ## Artículos

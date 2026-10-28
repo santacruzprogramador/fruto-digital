@@ -1,0 +1,3 @@
+/servicios/tienda-online /servicios/catalogo-digital 301
+/servicios/tienda-online/ /servicios/catalogo-digital/ 301
+/servicios/tienda-online/* /servicios/catalogo-digital/:splat 301

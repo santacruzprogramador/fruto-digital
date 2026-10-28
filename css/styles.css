@@ -1380,9 +1380,9 @@ a.whatsapp-cta:focus-visible {
 
 /* #endregion servicios/auditoria-seo */
 
-/* #region servicios/tienda-online */
+/* #region servicios/catalogo-digital */
 /* Hero */
-.hero-tienda {
+.hero-catalogo {
   padding-block: 2rem;
   background-color: var(--bg-dark);
   background-image:
@@ -1392,11 +1392,11 @@ a.whatsapp-cta:focus-visible {
   background-size: cover;
 }
 
-.hero-tienda-container {
+.hero-catalogo-container {
   width: 100%;
 }
 
-.hero-tienda-content {
+.hero-catalogo-content {
   display: flex;
   width: min(100%, 620px);
   flex-direction: column;
@@ -1405,7 +1405,7 @@ a.whatsapp-cta:focus-visible {
   padding-block: 2rem;
 }
 
-.hero-tienda-eyebrow {
+.hero-catalogo-eyebrow {
   margin: 0;
   color: #f59e0b;
   font-size: 0.85rem;
@@ -1414,7 +1414,7 @@ a.whatsapp-cta:focus-visible {
   text-transform: uppercase;
 }
 
-.hero-tienda-title {
+.hero-catalogo-title {
   max-width: 130ch;
   margin: 0;
   color: var(--gold-titles);
@@ -1424,7 +1424,7 @@ a.whatsapp-cta:focus-visible {
   letter-spacing: -0.04em;
 }
 
-.hero-tienda-description {
+.hero-catalogo-description {
   max-width: 52ch;
   margin: 0;
   color: #e5e7eb;
@@ -1432,13 +1432,13 @@ a.whatsapp-cta:focus-visible {
   line-height: 1.65;
 }
 
-.hero-tienda-buttons {
+.hero-catalogo-buttons {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.hero-tienda-button {
+.hero-catalogo-button {
   display: inline-flex;
   width: 100%;
   min-height: 48px;
@@ -1455,43 +1455,43 @@ a.whatsapp-cta:focus-visible {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.hero-tienda-button-primary {
+.hero-catalogo-button-primary {
   background-color: var(--bg-blue);
   color: var(--text-white);
 }
 
-.hero-tienda-button-secondary {
+.hero-catalogo-button-secondary {
   background-color: var(--bg-white);
   color: var(--text-black);
 }
 
-.hero-tienda-button:hover {
+.hero-catalogo-button:hover {
   transform: translateY(-2px);
 }
 
-.hero-tienda-button:focus-visible {
+.hero-catalogo-button:focus-visible {
   outline: 2px solid var(--gold-titles);
   outline-offset: 3px;
 }
 
 @media (min-width: 768px) {
-  .hero-tienda-buttons {
+  .hero-catalogo-buttons {
     flex-direction: row;
     align-items: center;
   }
 
-  .hero-tienda-button {
+  .hero-catalogo-button {
     width: auto;
   }
 }
 
 
-/* #endregion servicios/tienda-online */
+/* #endregion servicios/catalogo-digital */
 
 /* #region servicios - layout compartido */
 /* Heroes split de páginas de servicios */
 .hero-corporativa,
-.hero-tienda,
+.hero-catalogo,
 .hero-auditoria {
   background-image: linear-gradient(135deg, #111827, #152a47);
 }
@@ -1526,7 +1526,7 @@ a.whatsapp-cta:focus-visible {
   }
 
   .hero-corporativa-content,
-  .hero-tienda-content,
+  .hero-catalogo-content,
   .hero-auditoria-content {
     width: 100%;
     max-width: 620px;
