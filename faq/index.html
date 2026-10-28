@@ -77,6 +77,8 @@
     </script>
 
     <!-- Componentes compartidos de navegación y pie de página -->
+    <link rel="stylesheet" href="../components/nav/nav.css" data-nav-css>
+    <link rel="stylesheet" href="../components/footer/footer.css" data-footer-css>
     <script src="../components/nav/nav.js" defer></script>
     <script src="../components/footer/footer.js" defer></script>
 
@@ -122,14 +124,31 @@
       ></iframe
     ></noscript>
     <!-- Fin de Google Tag Manager (sin JavaScript) -->
-    <div id="nav-container"></div>
+    <div id="nav-container">
+      <noscript>
+        <header class="navbar">
+          <div class="container navbar-container">
+            <a href="/" class="logo" aria-label="Fruto Digital, inicio">Fruto Digital</a>
+            <nav class="menu" aria-label="Navegación principal">
+              <a class="menu-link" href="/">Inicio</a>
+              <a class="menu-link" href="/servicios/landing-page/">Landing page</a>
+              <a class="menu-link" href="/servicios/web-corporativa/">Web corporativa</a>
+              <a class="menu-link" href="/servicios/catalogo-digital/">Catálogo digital</a>
+              <a class="menu-link" href="/servicios/auditoria-seo/">Auditoría SEO</a>
+              <a class="menu-link" href="/blog/">Blog</a>
+              <a class="menu-link" href="/faq/">FAQ</a>
+            </nav>
+          </div>
+        </header>
+      </noscript>
+    </div>
 
     <main>
       <!-- Sección: Preguntas frecuentes -->
       <section class="faq-section" aria-labelledby="faq-title">
         <div class="container">
           <header class="faq-header">
-            <h1 id="faq-title" class="heading-2 faq-title">
+            <h1 id="faq-title" class="heading-1 faq-title">
               Preguntas frecuentes sobre diseño web
             </h1>
           </header>

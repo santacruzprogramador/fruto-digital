@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +11,7 @@
         content="La página que buscás no está disponible. Volvé al inicio de Fruto Digital."
     >
 
+    <meta name="robots" content="noindex, follow">
     <meta name="theme-color" content="#111827">
 
     <style>
@@ -96,6 +96,28 @@
             outline-offset: 4px;
         }
 
+        .extra-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px 20px;
+            margin: 28px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .extra-links a {
+            color: var(--gold);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .extra-links a:hover,
+        .extra-links a:focus-visible {
+            text-decoration: underline;
+        }
+
         footer {
             margin-top: 64px;
             color: var(--muted);
@@ -118,6 +140,19 @@
         <a class="button" href="/">
             Volver al inicio
         </a>
+
+        <ul class="extra-links">
+            <li><a href="/servicios/landing-page/">Landing page</a></li>
+            <li><a href="/faq/">Preguntas frecuentes</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li>
+                <a
+                    href="https://wa.me/5493743615520?text=Hola%2C%20vi%20la%20web%20de%20Fruto%20Digital%20y%20quisiera%20consultar%20por%20un%20proyecto."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >WhatsApp</a>
+            </li>
+        </ul>
     </main>
 
     <footer>

@@ -74,9 +74,11 @@
     <meta name="theme-color" content="#0f172a" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=2.0"/>
+    <link rel="stylesheet" href="css/styles.css?v=2.1"/>
 
     <!-- Componentes -->
+    <link rel="stylesheet" href="./components/nav/nav.css" data-nav-css>
+    <link rel="stylesheet" href="./components/footer/footer.css" data-footer-css>
     <script src="./components/nav/nav.js" defer></script>
     <script src="./components/footer/footer.js" defer></script>
 
@@ -131,7 +133,24 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header -->
-    <div id="nav-container"></div>
+    <div id="nav-container">
+      <noscript>
+        <header class="navbar">
+          <div class="container navbar-container">
+            <a href="/" class="logo" aria-label="Fruto Digital, inicio">Fruto Digital</a>
+            <nav class="menu" aria-label="Navegación principal">
+              <a class="menu-link" href="/">Inicio</a>
+              <a class="menu-link" href="/servicios/landing-page/">Landing page</a>
+              <a class="menu-link" href="/servicios/web-corporativa/">Web corporativa</a>
+              <a class="menu-link" href="/servicios/catalogo-digital/">Catálogo digital</a>
+              <a class="menu-link" href="/servicios/auditoria-seo/">Auditoría SEO</a>
+              <a class="menu-link" href="/blog/">Blog</a>
+              <a class="menu-link" href="/faq/">FAQ</a>
+            </nav>
+          </div>
+        </header>
+      </noscript>
+    </div>
 
     <main>
       <!-- Hero -->
@@ -139,7 +158,7 @@
         <div class="container hero-container">
           <div class="hero-content">
             <h1 class="heading-1">
-              diseño y desarrollo web
+              Diseño y desarrollo web
               <span class="subtitulo-local">Jardín América, Misiones</span>
             </h1>
             <p class="hero-description">
@@ -296,7 +315,7 @@
               <h3 class="heading-3">AUDITORÍA SEO GRATIS</h3>
 
               <p class="service-description">
-                <strong>¿ya tienes un sitio web?</strong>
+                <strong>¿Ya tenés un sitio web?</strong>
                 Descubrí por qué tu competencia aparece primero en Google y qué
                 tenés que ajustar para empezar a recibir esos clientes vos. Te
                 regalamos un análisis claro de tu web, sin vueltas ni
@@ -540,9 +559,6 @@
         ]
       }
     </script>
-
-    <!-- Scripts propios -->
-    <script src="js/main.js" defer></script>
 
     <!-- Cloudflare Web Analytics -->
     <script

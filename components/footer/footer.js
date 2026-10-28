@@ -84,6 +84,39 @@
         basePath
       );
 
+      bindAuditForm();
+    }
+
+    function bindAuditForm() {
+      const form = container.querySelector('.footer-audit-form');
+      if (!form) return;
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const nameInput = form.querySelector('#footer-audit-name');
+        const urlInput = form.querySelector('#footer-audit-url');
+        const urlValue = (urlInput.value || '').trim();
+        const nameValue = (nameInput.value || '').trim();
+
+        if (!urlValue) {
+          urlInput.focus();
+          return;
+        }
+
+        const normalizedUrl =
+          urlValue.startsWith('http://') || urlValue.startsWith('https://')
+            ? urlValue
+            : 'https://' + urlValue;
+
+        const message = `Hola, quiero solicitar una auditoría SEO gratuita.${nameValue ? ` Mi nombre es ${nameValue}.` : ''} Mi sitio web es: ${normalizedUrl}`;
+
+        window.open(
+          `https://wa.me/5493743615520?text=${encodeURIComponent(message)}`,
+          '_blank',
+          'noopener,noreferrer'
+        );
+      });
     }
 
     async function init() {

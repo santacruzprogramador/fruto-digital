@@ -46,7 +46,7 @@
     <link rel="preload" as="image" href="../../assets/imagen/landing-page.webp" fetchpriority="high">
 
     <!-- CSS principal -->
-    <link rel="stylesheet" href="../../css/styles.css?v=2.0">
+    <link rel="stylesheet" href="../../css/styles.css?v=2.1">
 
     <!-- DATOS ESTRUCTURADOS del servicio en formato JSON-LD -->
     <script type="application/ld+json">
@@ -76,6 +76,8 @@
     </script>
 
   <!-- Componentes compartidos de navegación y pie de página -->
+  <link rel="stylesheet" href="../../components/nav/nav.css" data-nav-css>
+  <link rel="stylesheet" href="../../components/footer/footer.css" data-footer-css>
   <script src="../../components/nav/nav.js" defer></script>
   <script src="../../components/footer/footer.js" defer></script>
 
@@ -113,7 +115,24 @@
   <!-- Fin de Google Tag Manager (sin JavaScript) -->
   
   <!-- Header -->
-  <div id="nav-container"></div>
+  <div id="nav-container">
+    <noscript>
+      <header class="navbar">
+        <div class="container navbar-container">
+          <a href="/" class="logo" aria-label="Fruto Digital, inicio">Fruto Digital</a>
+          <nav class="menu" aria-label="Navegación principal">
+            <a class="menu-link" href="/">Inicio</a>
+            <a class="menu-link" href="/servicios/landing-page/">Landing page</a>
+            <a class="menu-link" href="/servicios/web-corporativa/">Web corporativa</a>
+            <a class="menu-link" href="/servicios/catalogo-digital/">Catálogo digital</a>
+            <a class="menu-link" href="/servicios/auditoria-seo/">Auditoría SEO</a>
+            <a class="menu-link" href="/blog/">Blog</a>
+            <a class="menu-link" href="/faq/">FAQ</a>
+          </nav>
+        </div>
+      </header>
+    </noscript>
+  </div>
   <main>
 
     <!-- Hero -->

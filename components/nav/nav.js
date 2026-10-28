@@ -86,10 +86,21 @@
       );
 
       bindMobileDropdown();
+      bindMenuClose();
     }
 
-    // En pantallas táctiles, controlar "Qué hacemos" con clic y evitar que
-    // los estados hover/focus del navegador móvil abran y cierren el submenú.
+    function bindMenuClose() {
+      const menuToggle = container.querySelector('#menu-toggle');
+      if (!menuToggle) return;
+
+      container.querySelectorAll('.menu a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          menuToggle.checked = false;
+        });
+      });
+    }
+
+    // En móvil, "Qué hacemos" se abre y cierra con clic o teclado.
     function bindMobileDropdown() {
       const dropdown = container.querySelector('.menu-dropdown');
       const trigger = container.querySelector('.menu-dropdown-toggle');
@@ -97,13 +108,6 @@
       const mediaQuery = window.matchMedia('(max-width: 767px)');
 
       if (!dropdown || !trigger || !submenu) return;
-
-      const submenuId = 'nav-services-submenu';
-      submenu.id = submenuId;
-      trigger.setAttribute('role', 'button');
-      trigger.setAttribute('aria-haspopup', 'true');
-      trigger.setAttribute('aria-controls', submenuId);
-      trigger.setAttribute('aria-expanded', 'false');
 
       function setOpen(open) {
         trigger.setAttribute('aria-expanded', String(open));

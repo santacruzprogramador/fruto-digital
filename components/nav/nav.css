@@ -112,6 +112,13 @@
   content: "\2715";
 }
 
+.navbar:not(:has(.menu-toggle)) .menu {
+  display: flex;
+  flex-wrap: wrap;
+  position: static;
+  gap: 0.75rem;
+}
+
 .navbar .menu {
   display: none;
   flex-direction: column;
@@ -165,6 +172,13 @@
   justify-content: space-between;
   gap: 0.5rem;
   width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
 }
 
 .navbar .dropdown-arrow {

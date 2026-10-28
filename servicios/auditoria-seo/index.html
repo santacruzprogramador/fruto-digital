@@ -46,7 +46,7 @@
   <meta name="theme-color" content="#0f172a">
 
   <!-- PRECARGA de la imagen principal -->
-  <link rel="preload" as="image" href="../../assets/imagen/hero-generica.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="../../assets/imagen/auditoria-seo.webp" fetchpriority="high">
 
   <!-- CSS principal -->
   <link rel="stylesheet" href="../../css/styles.css?v=2.1">
@@ -79,6 +79,8 @@
   </script>
 
   <!-- Componentes compartidos de navegación y pie de página -->
+  <link rel="stylesheet" href="../../components/nav/nav.css" data-nav-css>
+  <link rel="stylesheet" href="../../components/footer/footer.css" data-footer-css>
   <script src="../../components/nav/nav.js" defer></script>
   <script src="../../components/footer/footer.js" defer></script>
   <script src="../../js/main.js" defer></script>
@@ -165,34 +167,6 @@
             <button class="hero-auditoria-button hero-auditoria-button-primary auditoria-solicitud-submit"
               type="submit">PEDIR AUDITORÍA SEO GRATIS</button>
           </form>
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const form = document.querySelector('.auditoria-solicitud-form');
-              if (!form) return;
-
-              form.addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                const nameInput = form.querySelector('#auditoria-nombre');
-                const urlInput = form.querySelector('#auditoria-url');
-                const urlValue = (urlInput.value || '').trim();
-                const nameValue = (nameInput.value || '').trim();
-
-                if (!urlValue) {
-                  urlInput.focus();
-                  return;
-                }
-
-                const normalizedUrl = urlValue.startsWith('http://') || urlValue.startsWith('https://')
-                  ? urlValue
-                  : 'https://' + urlValue;
-
-                const message = `Hola, quiero solicitar una auditoría SEO gratuita.${nameValue ? ` Mi nombre es ${nameValue}.` : ''} Mi sitio web es: ${normalizedUrl}`;
-                const waUrl = `https://wa.me/5493743615520?text=${encodeURIComponent(message)}`;
-                window.open(waUrl, '_blank', 'noopener,noreferrer');
-              });
-            });
-          </script>
         </div>
       </div>
     </section>
