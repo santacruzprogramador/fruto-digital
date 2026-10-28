@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>404 — Página no encontrada | Fruto Digital</title>
+
+    <meta
+        name="description"
+        content="La página que buscás no está disponible. Volvé al inicio de Fruto Digital."
+    >
+
+    <meta name="theme-color" content="#111827">
+
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --gold: #eeb90c;
+            --background: #111827;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+            min-height: 100svh;
+            margin: 0;
+            padding: 24px;
+
+            color: var(--text);
+            background: var(--background);
+
+            font-family: system-ui, sans-serif;
+            text-align: center;
+        }
+
+        main {
+            width: 100%;
+            max-width: 580px;
+        }
+
+        .code {
+            margin: 0;
+            color: var(--gold);
+            font-size: clamp(90px, 20vw, 150px);
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -7px;
+        }
+
+        h1 {
+            margin: 24px 0 12px;
+            font-size: clamp(27px, 5vw, 38px);
+            line-height: 1.2;
+        }
+
+        .description {
+            margin: 0 auto 28px;
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 8px;
+
+            color: #111827;
+            background: var(--gold);
+
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+
+            transition: background 0.2s ease;
+        }
+
+        .button:hover {
+            background: #ffd64a;
+        }
+
+        .button:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 4px;
+        }
+
+        footer {
+            margin-top: 64px;
+            color: var(--muted);
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p class="code" aria-hidden="true">404</p>
+
+        <h1>Página no encontrada</h1>
+
+        <p class="description">
+            La página que buscás no existe o ya no está disponible.
+            Podés volver al inicio y seguir explorando Fruto Digital.
+        </p>
+
+        <a class="button" href="/">
+            Volver al inicio
+        </a>
+    </main>
+
+    <footer>
+        Fruto Digital · Diseño web y SEO
+    </footer>
+</body>
+</html>
