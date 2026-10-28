@@ -25,3 +25,8 @@ Desarrolla la página con enfoque modular, reutilizable y Mobile First.
 * No crear archivos innecesarios.
 * Mantener el código limpio, ordenado y fácil de modificar.
 * No romper ni modificar innecesariamente el código existente.
+
+## SEO on-page
+* Como convención del proyecto, cada imagen debe incluir `alt` y `title`: usar un `alt` descriptivo y contextual para imágenes informativas, `alt=""` para las decorativas y un `title` breve que aporte contexto. Evitar el relleno de palabras clave.
+* Los enlaces deben tener texto visible, conciso y descriptivo, y cada enlace debe incluir un `title` breve y pertinente como convención del proyecto para satisfacer los reportes de auditoría.
+* Referencias: [Google Images](https://developers.google.com/search/docs/appearance/google-images) y [buenas prácticas para enlaces](https://developers.google.com/search/docs/crawling-indexing/links-crawlable).
